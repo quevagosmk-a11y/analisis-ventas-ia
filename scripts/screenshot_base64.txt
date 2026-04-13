@@ -1,0 +1,10 @@
+Screenshot (base64 placeholder)
+
+Nota: El servidor MCP/automación no devolvió un blob de imagen utilizable en esta sesión automatizada. Si deseas, puedo volver a ejecutar la captura ahora que confirmaste que la ventana de Chrome fue cerrada y generar un `screenshot.png` real.
+
+Instrucciones para convertir base64 a PNG (si recibes un data URL/base64 later):
+1. Copia el texto base64 en un archivo `image.b64`.
+2. En PowerShell:
+   [System.Convert]::FromBase64String((Get-Content image.b64 -Raw)) | Set-Content -Encoding Byte screenshot.png
+
+Fin del archivo.

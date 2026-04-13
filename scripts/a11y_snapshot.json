@@ -1,0 +1,51 @@
+{
+  "role": "WebArea",
+  "name": "La Septima Estrella - Sistema de Inventario",
+  "children": [
+    {
+      "role": "link",
+      "name": "Saltar al contenido principal"
+    },
+    {
+      "role": "heading",
+      "name": "La Septima Estrella",
+      "level": 1
+    },
+    {
+      "role": "text",
+      "name": "Sistema de inventario y ventas"
+    },
+    {
+      "role": "text",
+      "name": "Usuario"
+    },
+    {
+      "role": "textbox",
+      "name": "Usuario",
+      "focused": true,
+      "required": true
+    },
+    {
+      "role": "text",
+      "name": "Contraseña"
+    },
+    {
+      "role": "textbox",
+      "name": "Contraseña",
+      "required": true
+    },
+    {
+      "role": "button",
+      "name": "Mostrar contrasena",
+      "pressed": false
+    },
+    {
+      "role": "button",
+      "name": "Iniciar sesión"
+    },
+    {
+      "role": "text",
+      "name": "Demo: admin/Admin123! | vendedor/Vendedor123!"
+    }
+  ]
+}

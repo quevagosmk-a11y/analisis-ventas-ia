@@ -1,0 +1,11 @@
+{
+  "name": "la-septima-estrella",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Entorno Node para validaciones del frontend",
+  "scripts": {
+    "check:frontend": "node --check src/frontend/app.js",
+    "check:main": "node --check src/frontend/app.js && node -e \"new Function(require('fs').readFileSync('src/frontend/app.js','utf8')); console.log('Frontend JS OK')\"",
+    "smoke:frontend": "python scripts/smoke_frontend.py"
+  }
+}

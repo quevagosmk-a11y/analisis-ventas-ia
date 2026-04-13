@@ -1,0 +1,551 @@
+date,product,category,qty,price
+2025-09-01,Papas Margarita 30g,Snacks,5,2657.92
+2025-09-01,Gaseosa Postobon Manzana 400ml,Bebidas,3,2679.81
+2025-09-01,Frijol Cargamanto 500g,Granos,1,4841.22
+2025-09-01,Aceite Premier 1L,Despensa,1,16128.89
+2025-09-01,Huevos AA x30,Despensa,1,14291.45
+2025-09-01,Queso Campesino 250g,Lacteos,2,6738.59
+2025-09-01,Leche Entera Alpina 900ml,Lacteos,2,4001.5
+2025-09-01,Cerveza Poker Sixpack,Bebidas,2,11662.32
+2025-09-02,Papas Margarita 30g,Snacks,1,2477.05
+2025-09-02,Gaseosa Colombiana 350ml,Bebidas,3,2843.61
+2025-09-02,Gaseosa Postobon Manzana 400ml,Bebidas,3,2622.74
+2025-09-02,Arroz Diana 1kg,Granos,1,4658.72
+2025-09-02,Huevos AA x30,Despensa,1,13917.8
+2025-09-02,Queso Campesino 250g,Lacteos,2,6653.63
+2025-09-02,Leche Entera Alpina 900ml,Lacteos,2,4195.47
+2025-09-02,Cerveza Poker Sixpack,Bebidas,2,12219.02
+2025-09-03,Papas Margarita 30g,Snacks,4,2482.23
+2025-09-03,Gaseosa Colombiana 350ml,Bebidas,4,2754.04
+2025-09-03,Arroz Diana 1kg,Granos,4,4028.45
+2025-09-03,Queso Campesino 250g,Lacteos,3,7023.56
+2025-09-03,Leche Entera Alpina 900ml,Lacteos,3,4065.21
+2025-09-03,Cerveza Poker Sixpack,Bebidas,3,11598.52
+2025-09-04,Papas Margarita 30g,Snacks,7,2474.34
+2025-09-04,Gaseosa Colombiana 350ml,Bebidas,3,2758.8
+2025-09-04,Gaseosa Postobon Manzana 400ml,Bebidas,2,2564.36
+2025-09-04,Arroz Diana 1kg,Granos,2,4355.59
+2025-09-04,Frijol Cargamanto 500g,Granos,1,5196.14
+2025-09-04,Aceite Premier 1L,Despensa,1,15395.49
+2025-09-04,Queso Campesino 250g,Lacteos,2,6929.95
+2025-09-04,Leche Entera Alpina 900ml,Lacteos,2,4057.52
+2025-09-04,Cerveza Poker Sixpack,Bebidas,4,11421.54
+2025-09-05,Papas Margarita 30g,Snacks,6,2638.4
+2025-09-05,Gaseosa Colombiana 350ml,Bebidas,3,2626.33
+2025-09-05,Gaseosa Postobon Manzana 400ml,Bebidas,3,2607.13
+2025-09-05,Arroz Diana 1kg,Granos,2,4435.79
+2025-09-05,Frijol Cargamanto 500g,Granos,4,5315.67
+2025-09-05,Aceite Premier 1L,Despensa,1,16671.52
+2025-09-05,Huevos AA x30,Despensa,6,13922.18
+2025-09-05,Queso Campesino 250g,Lacteos,1,6861.55
+2025-09-05,Leche Entera Alpina 900ml,Lacteos,1,4238.97
+2025-09-05,Cerveza Poker Sixpack,Bebidas,1,11882.52
+2025-09-06,Papas Margarita 30g,Snacks,9,2378.31
+2025-09-06,Gaseosa Colombiana 350ml,Bebidas,3,2898.41
+2025-09-06,Gaseosa Postobon Manzana 400ml,Bebidas,5,2575.08
+2025-09-06,Arroz Diana 1kg,Granos,2,4307.24
+2025-09-06,Frijol Cargamanto 500g,Granos,4,5300.35
+2025-09-06,Aceite Premier 1L,Despensa,6,16205.3
+2025-09-06,Huevos AA x30,Despensa,4,13962.46
+2025-09-06,Queso Campesino 250g,Lacteos,3,7087.62
+2025-09-06,Leche Entera Alpina 900ml,Lacteos,13,4108.42
+2025-09-06,Cerveza Poker Sixpack,Bebidas,6,12892.52
+2025-09-07,Papas Margarita 30g,Snacks,2,2313.27
+2025-09-07,Gaseosa Postobon Manzana 400ml,Bebidas,2,2762.28
+2025-09-07,Arroz Diana 1kg,Granos,1,4523.14
+2025-09-07,Huevos AA x30,Despensa,3,13508.18
+2025-09-07,Queso Campesino 250g,Lacteos,2,6920.24
+2025-09-07,Leche Entera Alpina 900ml,Lacteos,2,3973.42
+2025-09-07,Cerveza Poker Sixpack,Bebidas,1,12584.13
+2025-09-08,Papas Margarita 30g,Snacks,4,2712.22
+2025-09-08,Gaseosa Colombiana 350ml,Bebidas,2,2915.64
+2025-09-08,Gaseosa Postobon Manzana 400ml,Bebidas,1,2575.31
+2025-09-08,Frijol Cargamanto 500g,Granos,1,5589.38
+2025-09-08,Huevos AA x30,Despensa,2,13262.38
+2025-09-08,Queso Campesino 250g,Lacteos,4,6835.56
+2025-09-08,Leche Entera Alpina 900ml,Lacteos,1,4066.8
+2025-09-08,Cerveza Poker Sixpack,Bebidas,4,11828.74
+2025-09-09,Papas Margarita 30g,Snacks,6,2451.36
+2025-09-09,Gaseosa Colombiana 350ml,Bebidas,2,2823.25
+2025-09-09,Gaseosa Postobon Manzana 400ml,Bebidas,2,2699.01
+2025-09-09,Arroz Diana 1kg,Granos,3,4761.46
+2025-09-09,Aceite Premier 1L,Despensa,4,16058.33
+2025-09-09,Huevos AA x30,Despensa,5,14127.45
+2025-09-09,Queso Campesino 250g,Lacteos,5,6726.28
+2025-09-09,Leche Entera Alpina 900ml,Lacteos,6,3999.45
+2025-09-09,Cerveza Poker Sixpack,Bebidas,4,11470.0
+2025-09-10,Papas Margarita 30g,Snacks,4,2499.12
+2025-09-10,Gaseosa Colombiana 350ml,Bebidas,2,2751.47
+2025-09-10,Gaseosa Postobon Manzana 400ml,Bebidas,2,2621.2
+2025-09-10,Frijol Cargamanto 500g,Granos,2,5050.56
+2025-09-10,Aceite Premier 1L,Despensa,2,16359.12
+2025-09-10,Huevos AA x30,Despensa,1,13336.74
+2025-09-10,Queso Campesino 250g,Lacteos,1,6798.76
+2025-09-10,Leche Entera Alpina 900ml,Lacteos,1,4308.47
+2025-09-10,Cerveza Poker Sixpack,Bebidas,3,12163.85
+2025-09-11,Papas Margarita 30g,Snacks,3,2506.97
+2025-09-11,Gaseosa Colombiana 350ml,Bebidas,2,2910.15
+2025-09-11,Gaseosa Postobon Manzana 400ml,Bebidas,4,2724.84
+2025-09-11,Arroz Diana 1kg,Granos,1,4826.9
+2025-09-11,Frijol Cargamanto 500g,Granos,2,5655.48
+2025-09-11,Aceite Premier 1L,Despensa,1,15966.52
+2025-09-11,Huevos AA x30,Despensa,2,12467.14
+2025-09-11,Queso Campesino 250g,Lacteos,2,6898.59
+2025-09-11,Leche Entera Alpina 900ml,Lacteos,8,4087.93
+2025-09-11,Cerveza Poker Sixpack,Bebidas,3,11666.79
+2025-09-12,Papas Margarita 30g,Snacks,7,2525.94
+2025-09-12,Gaseosa Colombiana 350ml,Bebidas,8,2833.86
+2025-09-12,Gaseosa Postobon Manzana 400ml,Bebidas,5,2634.56
+2025-09-12,Arroz Diana 1kg,Granos,5,4365.27
+2025-09-12,Frijol Cargamanto 500g,Granos,2,5509.72
+2025-09-12,Aceite Premier 1L,Despensa,1,17079.36
+2025-09-12,Queso Campesino 250g,Lacteos,5,7208.64
+2025-09-12,Leche Entera Alpina 900ml,Lacteos,8,4112.15
+2025-09-12,Cerveza Poker Sixpack,Bebidas,5,11280.21
+2025-09-13,Papas Margarita 30g,Snacks,6,2548.77
+2025-09-13,Gaseosa Colombiana 350ml,Bebidas,2,2639.38
+2025-09-13,Gaseosa Postobon Manzana 400ml,Bebidas,3,2580.08
+2025-09-13,Arroz Diana 1kg,Granos,2,4479.78
+2025-09-13,Frijol Cargamanto 500g,Granos,2,5154.04
+2025-09-13,Aceite Premier 1L,Despensa,1,18066.93
+2025-09-13,Huevos AA x30,Despensa,3,13332.21
+2025-09-13,Queso Campesino 250g,Lacteos,5,7214.47
+2025-09-13,Leche Entera Alpina 900ml,Lacteos,3,3697.09
+2025-09-13,Cerveza Poker Sixpack,Bebidas,3,11903.0
+2025-09-14,Papas Margarita 30g,Snacks,4,2591.06
+2025-09-14,Gaseosa Colombiana 350ml,Bebidas,3,2701.93
+2025-09-14,Gaseosa Postobon Manzana 400ml,Bebidas,2,2456.19
+2025-09-14,Arroz Diana 1kg,Granos,2,4382.88
+2025-09-14,Aceite Premier 1L,Despensa,1,16178.5
+2025-09-14,Huevos AA x30,Despensa,1,12148.51
+2025-09-14,Queso Campesino 250g,Lacteos,2,6986.22
+2025-09-14,Leche Entera Alpina 900ml,Lacteos,5,4116.29
+2025-09-14,Cerveza Poker Sixpack,Bebidas,3,12154.65
+2025-09-15,Papas Margarita 30g,Snacks,3,2525.97
+2025-09-15,Gaseosa Colombiana 350ml,Bebidas,2,2698.72
+2025-09-15,Gaseosa Postobon Manzana 400ml,Bebidas,2,2510.52
+2025-09-15,Frijol Cargamanto 500g,Granos,2,5120.01
+2025-09-15,Aceite Premier 1L,Despensa,1,16849.67
+2025-09-15,Huevos AA x30,Despensa,2,14278.45
+2025-09-15,Queso Campesino 250g,Lacteos,3,6846.17
+2025-09-15,Leche Entera Alpina 900ml,Lacteos,1,4114.66
+2025-09-15,Cerveza Poker Sixpack,Bebidas,3,11519.39
+2025-09-16,Papas Margarita 30g,Snacks,3,2558.83
+2025-09-16,Gaseosa Colombiana 350ml,Bebidas,3,2771.99
+2025-09-16,Gaseosa Postobon Manzana 400ml,Bebidas,2,2735.31
+2025-09-16,Arroz Diana 1kg,Granos,2,4456.95
+2025-09-16,Frijol Cargamanto 500g,Granos,3,5371.21
+2025-09-16,Aceite Premier 1L,Despensa,2,16723.41
+2025-09-16,Huevos AA x30,Despensa,4,13275.74
+2025-09-16,Queso Campesino 250g,Lacteos,1,7210.66
+2025-09-16,Leche Entera Alpina 900ml,Lacteos,5,4165.93
+2025-09-16,Cerveza Poker Sixpack,Bebidas,2,12157.3
+2025-09-17,Papas Margarita 30g,Snacks,5,2407.78
+2025-09-17,Gaseosa Colombiana 350ml,Bebidas,3,2873.29
+2025-09-17,Gaseosa Postobon Manzana 400ml,Bebidas,1,2594.22
+2025-09-17,Arroz Diana 1kg,Granos,2,4820.79
+2025-09-17,Frijol Cargamanto 500g,Granos,2,5322.78
+2025-09-17,Aceite Premier 1L,Despensa,2,16621.36
+2025-09-17,Huevos AA x30,Despensa,2,13554.05
+2025-09-17,Queso Campesino 250g,Lacteos,3,6815.16
+2025-09-17,Leche Entera Alpina 900ml,Lacteos,2,4279.45
+2025-09-17,Cerveza Poker Sixpack,Bebidas,2,11322.29
+2025-09-18,Papas Margarita 30g,Snacks,5,2334.51
+2025-09-18,Gaseosa Colombiana 350ml,Bebidas,2,2799.25
+2025-09-18,Gaseosa Postobon Manzana 400ml,Bebidas,3,2462.81
+2025-09-18,Arroz Diana 1kg,Granos,1,4316.91
+2025-09-18,Frijol Cargamanto 500g,Granos,1,5307.47
+2025-09-18,Aceite Premier 1L,Despensa,1,16500.46
+2025-09-18,Huevos AA x30,Despensa,1,13585.46
+2025-09-18,Queso Campesino 250g,Lacteos,3,7499.02
+2025-09-18,Leche Entera Alpina 900ml,Lacteos,3,3918.43
+2025-09-18,Cerveza Poker Sixpack,Bebidas,3,11936.81
+2025-09-19,Papas Margarita 30g,Snacks,5,2474.52
+2025-09-19,Gaseosa Colombiana 350ml,Bebidas,3,2721.1
+2025-09-19,Gaseosa Postobon Manzana 400ml,Bebidas,1,2524.26
+2025-09-19,Arroz Diana 1kg,Granos,2,4280.02
+2025-09-19,Aceite Premier 1L,Despensa,4,16970.58
+2025-09-19,Huevos AA x30,Despensa,2,12598.32
+2025-09-19,Queso Campesino 250g,Lacteos,5,7279.99
+2025-09-19,Leche Entera Alpina 900ml,Lacteos,8,4093.83
+2025-09-19,Cerveza Poker Sixpack,Bebidas,4,12320.76
+2025-09-20,Papas Margarita 30g,Snacks,7,2337.04
+2025-09-20,Gaseosa Colombiana 350ml,Bebidas,4,2861.81
+2025-09-20,Gaseosa Postobon Manzana 400ml,Bebidas,4,2495.61
+2025-09-20,Arroz Diana 1kg,Granos,4,4591.85
+2025-09-20,Frijol Cargamanto 500g,Granos,2,4901.65
+2025-09-20,Aceite Premier 1L,Despensa,2,16883.47
+2025-09-20,Huevos AA x30,Despensa,4,13551.47
+2025-09-20,Queso Campesino 250g,Lacteos,1,6848.7
+2025-09-20,Leche Entera Alpina 900ml,Lacteos,5,4042.24
+2025-09-20,Cerveza Poker Sixpack,Bebidas,5,11914.47
+2025-09-21,Papas Margarita 30g,Snacks,6,2492.56
+2025-09-21,Gaseosa Colombiana 350ml,Bebidas,3,2869.52
+2025-09-21,Gaseosa Postobon Manzana 400ml,Bebidas,4,2441.24
+2025-09-21,Arroz Diana 1kg,Granos,2,4489.58
+2025-09-21,Frijol Cargamanto 500g,Granos,2,5370.24
+2025-09-21,Huevos AA x30,Despensa,5,13572.28
+2025-09-21,Queso Campesino 250g,Lacteos,4,6417.8
+2025-09-21,Leche Entera Alpina 900ml,Lacteos,1,4182.17
+2025-09-21,Cerveza Poker Sixpack,Bebidas,3,11994.73
+2025-09-22,Papas Margarita 30g,Snacks,5,2307.03
+2025-09-22,Gaseosa Postobon Manzana 400ml,Bebidas,1,2608.56
+2025-09-22,Arroz Diana 1kg,Granos,5,4691.79
+2025-09-22,Frijol Cargamanto 500g,Granos,2,4850.18
+2025-09-22,Aceite Premier 1L,Despensa,1,15339.32
+2025-09-22,Queso Campesino 250g,Lacteos,2,6274.04
+2025-09-22,Leche Entera Alpina 900ml,Lacteos,4,3901.99
+2025-09-22,Cerveza Poker Sixpack,Bebidas,5,11878.57
+2025-09-23,Papas Margarita 30g,Snacks,3,2549.25
+2025-09-23,Gaseosa Colombiana 350ml,Bebidas,1,2728.61
+2025-09-23,Arroz Diana 1kg,Granos,4,4714.02
+2025-09-23,Frijol Cargamanto 500g,Granos,2,5271.47
+2025-09-23,Aceite Premier 1L,Despensa,1,16251.48
+2025-09-23,Huevos AA x30,Despensa,3,13304.23
+2025-09-23,Queso Campesino 250g,Lacteos,3,6958.79
+2025-09-23,Leche Entera Alpina 900ml,Lacteos,4,3873.79
+2025-09-23,Cerveza Poker Sixpack,Bebidas,2,11455.0
+2025-09-24,Papas Margarita 30g,Snacks,2,2498.36
+2025-09-24,Gaseosa Colombiana 350ml,Bebidas,4,2933.1
+2025-09-24,Gaseosa Postobon Manzana 400ml,Bebidas,2,2661.43
+2025-09-24,Arroz Diana 1kg,Granos,6,4699.57
+2025-09-24,Frijol Cargamanto 500g,Granos,1,5122.97
+2025-09-24,Aceite Premier 1L,Despensa,1,15949.85
+2025-09-24,Huevos AA x30,Despensa,3,13941.59
+2025-09-24,Queso Campesino 250g,Lacteos,4,6394.89
+2025-09-24,Leche Entera Alpina 900ml,Lacteos,5,4199.7
+2025-09-24,Cerveza Poker Sixpack,Bebidas,2,11888.08
+2025-09-25,Papas Margarita 30g,Snacks,2,2513.3
+2025-09-25,Gaseosa Colombiana 350ml,Bebidas,2,2721.59
+2025-09-25,Gaseosa Postobon Manzana 400ml,Bebidas,4,2762.81
+2025-09-25,Arroz Diana 1kg,Granos,2,4488.16
+2025-09-25,Frijol Cargamanto 500g,Granos,2,5291.52
+2025-09-25,Aceite Premier 1L,Despensa,1,16168.64
+2025-09-25,Queso Campesino 250g,Lacteos,4,6976.85
+2025-09-25,Leche Entera Alpina 900ml,Lacteos,5,4083.74
+2025-09-25,Cerveza Poker Sixpack,Bebidas,2,11835.03
+2025-09-26,Papas Margarita 30g,Snacks,11,2477.06
+2025-09-26,Gaseosa Colombiana 350ml,Bebidas,4,2724.24
+2025-09-26,Gaseosa Postobon Manzana 400ml,Bebidas,2,2787.3
+2025-09-26,Arroz Diana 1kg,Granos,3,4450.16
+2025-09-26,Aceite Premier 1L,Despensa,3,16483.24
+2025-09-26,Huevos AA x30,Despensa,3,12977.83
+2025-09-26,Queso Campesino 250g,Lacteos,3,6787.02
+2025-09-26,Leche Entera Alpina 900ml,Lacteos,4,3956.28
+2025-09-26,Cerveza Poker Sixpack,Bebidas,2,11817.78
+2025-09-27,Papas Margarita 30g,Snacks,6,2527.55
+2025-09-27,Gaseosa Colombiana 350ml,Bebidas,3,2710.56
+2025-09-27,Gaseosa Postobon Manzana 400ml,Bebidas,7,2611.91
+2025-09-27,Arroz Diana 1kg,Granos,5,4671.03
+2025-09-27,Aceite Premier 1L,Despensa,1,16288.57
+2025-09-27,Huevos AA x30,Despensa,3,13729.05
+2025-09-27,Queso Campesino 250g,Lacteos,7,6966.88
+2025-09-27,Leche Entera Alpina 900ml,Lacteos,2,3932.26
+2025-09-27,Cerveza Poker Sixpack,Bebidas,8,11905.94
+2025-09-28,Papas Margarita 30g,Snacks,6,2604.71
+2025-09-28,Gaseosa Colombiana 350ml,Bebidas,4,2729.94
+2025-09-28,Gaseosa Postobon Manzana 400ml,Bebidas,2,2641.16
+2025-09-28,Arroz Diana 1kg,Granos,2,4495.4
+2025-09-28,Aceite Premier 1L,Despensa,2,17274.0
+2025-09-28,Huevos AA x30,Despensa,2,13702.11
+2025-09-28,Queso Campesino 250g,Lacteos,2,6776.38
+2025-09-28,Leche Entera Alpina 900ml,Lacteos,4,3756.39
+2025-09-28,Cerveza Poker Sixpack,Bebidas,3,11919.97
+2025-09-29,Papas Margarita 30g,Snacks,2,2467.84
+2025-09-29,Gaseosa Colombiana 350ml,Bebidas,5,3032.6
+2025-09-29,Gaseosa Postobon Manzana 400ml,Bebidas,1,2675.67
+2025-09-29,Aceite Premier 1L,Despensa,2,16534.28
+2025-09-29,Huevos AA x30,Despensa,1,13575.25
+2025-09-29,Queso Campesino 250g,Lacteos,4,6923.09
+2025-09-29,Leche Entera Alpina 900ml,Lacteos,1,4281.74
+2025-09-29,Cerveza Poker Sixpack,Bebidas,3,11309.16
+2025-09-30,Papas Margarita 30g,Snacks,7,2740.34
+2025-09-30,Gaseosa Colombiana 350ml,Bebidas,2,2793.55
+2025-09-30,Gaseosa Postobon Manzana 400ml,Bebidas,3,2486.68
+2025-09-30,Arroz Diana 1kg,Granos,1,4793.6
+2025-09-30,Frijol Cargamanto 500g,Granos,2,5186.66
+2025-09-30,Aceite Premier 1L,Despensa,5,16716.98
+2025-09-30,Huevos AA x30,Despensa,3,13339.32
+2025-09-30,Queso Campesino 250g,Lacteos,2,7174.19
+2025-09-30,Cerveza Poker Sixpack,Bebidas,2,11382.2
+2025-10-01,Papas Margarita 30g,Snacks,3,2655.26
+2025-10-01,Gaseosa Colombiana 350ml,Bebidas,1,2922.04
+2025-10-01,Gaseosa Postobon Manzana 400ml,Bebidas,3,2759.53
+2025-10-01,Arroz Diana 1kg,Granos,1,4291.79
+2025-10-01,Frijol Cargamanto 500g,Granos,1,4881.18
+2025-10-01,Aceite Premier 1L,Despensa,3,16333.23
+2025-10-01,Huevos AA x30,Despensa,1,13711.73
+2025-10-01,Queso Campesino 250g,Lacteos,2,6339.52
+2025-10-01,Leche Entera Alpina 900ml,Lacteos,4,4083.87
+2025-10-01,Cerveza Poker Sixpack,Bebidas,3,11736.63
+2025-10-02,Papas Margarita 30g,Snacks,4,2484.08
+2025-10-02,Gaseosa Colombiana 350ml,Bebidas,3,2825.08
+2025-10-02,Arroz Diana 1kg,Granos,5,4745.55
+2025-10-02,Aceite Premier 1L,Despensa,2,16318.29
+2025-10-02,Huevos AA x30,Despensa,2,13905.74
+2025-10-02,Queso Campesino 250g,Lacteos,3,6572.79
+2025-10-02,Leche Entera Alpina 900ml,Lacteos,4,4451.8
+2025-10-02,Cerveza Poker Sixpack,Bebidas,1,12378.0
+2025-10-03,Papas Margarita 30g,Snacks,7,2662.34
+2025-10-03,Gaseosa Colombiana 350ml,Bebidas,5,2833.9
+2025-10-03,Gaseosa Postobon Manzana 400ml,Bebidas,2,2544.45
+2025-10-03,Arroz Diana 1kg,Granos,2,4301.86
+2025-10-03,Frijol Cargamanto 500g,Granos,1,5052.05
+2025-10-03,Aceite Premier 1L,Despensa,1,16089.6
+2025-10-03,Huevos AA x30,Despensa,5,13878.74
+2025-10-03,Queso Campesino 250g,Lacteos,6,6951.86
+2025-10-03,Leche Entera Alpina 900ml,Lacteos,4,4112.46
+2025-10-03,Cerveza Poker Sixpack,Bebidas,8,12372.58
+2025-10-04,Papas Margarita 30g,Snacks,6,2514.17
+2025-10-04,Gaseosa Colombiana 350ml,Bebidas,2,2711.97
+2025-10-04,Gaseosa Postobon Manzana 400ml,Bebidas,3,2461.55
+2025-10-04,Arroz Diana 1kg,Granos,3,4498.91
+2025-10-04,Frijol Cargamanto 500g,Granos,4,5374.41
+2025-10-04,Aceite Premier 1L,Despensa,6,16384.53
+2025-10-04,Huevos AA x30,Despensa,2,13091.9
+2025-10-04,Queso Campesino 250g,Lacteos,7,6623.09
+2025-10-04,Leche Entera Alpina 900ml,Lacteos,4,4186.87
+2025-10-04,Cerveza Poker Sixpack,Bebidas,1,11826.74
+2025-10-05,Papas Margarita 30g,Snacks,5,2552.97
+2025-10-05,Gaseosa Colombiana 350ml,Bebidas,3,2776.09
+2025-10-05,Arroz Diana 1kg,Granos,1,4768.33
+2025-10-05,Frijol Cargamanto 500g,Granos,2,5072.41
+2025-10-05,Aceite Premier 1L,Despensa,1,16300.37
+2025-10-05,Huevos AA x30,Despensa,4,13769.74
+2025-10-05,Queso Campesino 250g,Lacteos,1,7422.52
+2025-10-05,Leche Entera Alpina 900ml,Lacteos,4,4188.8
+2025-10-05,Cerveza Poker Sixpack,Bebidas,1,12158.32
+2025-10-06,Papas Margarita 30g,Snacks,2,2586.31
+2025-10-06,Gaseosa Colombiana 350ml,Bebidas,2,2710.8
+2025-10-06,Arroz Diana 1kg,Granos,2,4497.24
+2025-10-06,Aceite Premier 1L,Despensa,2,16882.33
+2025-10-06,Queso Campesino 250g,Lacteos,1,7117.76
+2025-10-06,Leche Entera Alpina 900ml,Lacteos,7,3958.48
+2025-10-06,Cerveza Poker Sixpack,Bebidas,3,11758.3
+2025-10-07,Papas Margarita 30g,Snacks,5,2592.13
+2025-10-07,Gaseosa Colombiana 350ml,Bebidas,2,3025.5
+2025-10-07,Frijol Cargamanto 500g,Granos,1,5228.4
+2025-10-07,Queso Campesino 250g,Lacteos,3,7126.51
+2025-10-07,Leche Entera Alpina 900ml,Lacteos,3,3992.27
+2025-10-07,Cerveza Poker Sixpack,Bebidas,3,12270.13
+2025-10-08,Papas Margarita 30g,Snacks,3,2424.32
+2025-10-08,Gaseosa Colombiana 350ml,Bebidas,4,2963.03
+2025-10-08,Gaseosa Postobon Manzana 400ml,Bebidas,3,2787.12
+2025-10-08,Arroz Diana 1kg,Granos,2,4311.93
+2025-10-08,Frijol Cargamanto 500g,Granos,2,4791.0
+2025-10-08,Aceite Premier 1L,Despensa,1,16638.91
+2025-10-08,Huevos AA x30,Despensa,2,13411.14
+2025-10-08,Queso Campesino 250g,Lacteos,5,6933.55
+2025-10-08,Leche Entera Alpina 900ml,Lacteos,6,4220.52
+2025-10-08,Cerveza Poker Sixpack,Bebidas,1,12183.59
+2025-10-09,Papas Margarita 30g,Snacks,6,2557.79
+2025-10-09,Gaseosa Colombiana 350ml,Bebidas,4,2730.29
+2025-10-09,Gaseosa Postobon Manzana 400ml,Bebidas,1,2649.72
+2025-10-09,Arroz Diana 1kg,Granos,1,4731.84
+2025-10-09,Aceite Premier 1L,Despensa,3,16220.94
+2025-10-09,Huevos AA x30,Despensa,2,12717.08
+2025-10-09,Queso Campesino 250g,Lacteos,1,6499.08
+2025-10-09,Leche Entera Alpina 900ml,Lacteos,8,3849.79
+2025-10-09,Cerveza Poker Sixpack,Bebidas,1,12395.94
+2025-10-10,Papas Margarita 30g,Snacks,7,2602.41
+2025-10-10,Gaseosa Colombiana 350ml,Bebidas,3,2866.36
+2025-10-10,Gaseosa Postobon Manzana 400ml,Bebidas,1,2672.42
+2025-10-10,Arroz Diana 1kg,Granos,3,4671.95
+2025-10-10,Frijol Cargamanto 500g,Granos,2,5299.85
+2025-10-10,Aceite Premier 1L,Despensa,7,15598.8
+2025-10-10,Huevos AA x30,Despensa,4,13236.02
+2025-10-10,Queso Campesino 250g,Lacteos,1,6495.46
+2025-10-10,Leche Entera Alpina 900ml,Lacteos,4,4269.41
+2025-10-10,Cerveza Poker Sixpack,Bebidas,6,11707.99
+2025-10-11,Papas Margarita 30g,Snacks,7,2576.61
+2025-10-11,Gaseosa Colombiana 350ml,Bebidas,2,2937.42
+2025-10-11,Gaseosa Postobon Manzana 400ml,Bebidas,2,2576.45
+2025-10-11,Arroz Diana 1kg,Granos,4,4566.13
+2025-10-11,Frijol Cargamanto 500g,Granos,1,5221.14
+2025-10-11,Aceite Premier 1L,Despensa,3,15753.52
+2025-10-11,Huevos AA x30,Despensa,4,12656.23
+2025-10-11,Queso Campesino 250g,Lacteos,4,6656.1
+2025-10-11,Leche Entera Alpina 900ml,Lacteos,6,3979.53
+2025-10-11,Cerveza Poker Sixpack,Bebidas,6,11417.56
+2025-10-12,Papas Margarita 30g,Snacks,3,2373.37
+2025-10-12,Gaseosa Colombiana 350ml,Bebidas,5,2793.51
+2025-10-12,Gaseosa Postobon Manzana 400ml,Bebidas,1,2745.31
+2025-10-12,Arroz Diana 1kg,Granos,1,4510.26
+2025-10-12,Frijol Cargamanto 500g,Granos,1,5052.52
+2025-10-12,Aceite Premier 1L,Despensa,2,16163.11
+2025-10-12,Huevos AA x30,Despensa,2,13305.34
+2025-10-12,Queso Campesino 250g,Lacteos,3,6939.11
+2025-10-12,Leche Entera Alpina 900ml,Lacteos,3,3940.35
+2025-10-12,Cerveza Poker Sixpack,Bebidas,5,11797.45
+2025-10-13,Papas Margarita 30g,Snacks,6,2506.79
+2025-10-13,Gaseosa Colombiana 350ml,Bebidas,3,2895.51
+2025-10-13,Gaseosa Postobon Manzana 400ml,Bebidas,4,2543.16
+2025-10-13,Arroz Diana 1kg,Granos,2,4407.17
+2025-10-13,Frijol Cargamanto 500g,Granos,2,5239.84
+2025-10-13,Aceite Premier 1L,Despensa,2,16659.22
+2025-10-13,Huevos AA x30,Despensa,3,13398.94
+2025-10-13,Queso Campesino 250g,Lacteos,1,7068.12
+2025-10-13,Leche Entera Alpina 900ml,Lacteos,4,3967.92
+2025-10-13,Cerveza Poker Sixpack,Bebidas,5,12081.52
+2025-10-14,Papas Margarita 30g,Snacks,5,2554.58
+2025-10-14,Gaseosa Colombiana 350ml,Bebidas,2,2705.93
+2025-10-14,Gaseosa Postobon Manzana 400ml,Bebidas,1,2768.0
+2025-10-14,Arroz Diana 1kg,Granos,2,4441.98
+2025-10-14,Frijol Cargamanto 500g,Granos,3,5277.47
+2025-10-14,Aceite Premier 1L,Despensa,1,15978.56
+2025-10-14,Queso Campesino 250g,Lacteos,2,6661.5
+2025-10-14,Leche Entera Alpina 900ml,Lacteos,4,4227.52
+2025-10-15,Papas Margarita 30g,Snacks,7,2527.27
+2025-10-15,Gaseosa Colombiana 350ml,Bebidas,1,2872.84
+2025-10-15,Gaseosa Postobon Manzana 400ml,Bebidas,3,2626.31
+2025-10-15,Frijol Cargamanto 500g,Granos,1,5186.8
+2025-10-15,Aceite Premier 1L,Despensa,2,16212.75
+2025-10-15,Huevos AA x30,Despensa,3,13905.32
+2025-10-15,Queso Campesino 250g,Lacteos,4,6899.9
+2025-10-15,Leche Entera Alpina 900ml,Lacteos,2,4401.46
+2025-10-15,Cerveza Poker Sixpack,Bebidas,3,12295.65
+2025-10-16,Papas Margarita 30g,Snacks,4,2413.6
+2025-10-16,Gaseosa Colombiana 350ml,Bebidas,2,2882.24
+2025-10-16,Arroz Diana 1kg,Granos,4,4383.12
+2025-10-16,Frijol Cargamanto 500g,Granos,2,5402.84
+2025-10-16,Aceite Premier 1L,Despensa,3,16830.72
+2025-10-16,Huevos AA x30,Despensa,1,13776.05
+2025-10-16,Queso Campesino 250g,Lacteos,4,7173.64
+2025-10-16,Leche Entera Alpina 900ml,Lacteos,3,4057.92
+2025-10-16,Cerveza Poker Sixpack,Bebidas,6,10665.9
+2025-10-17,Papas Margarita 30g,Snacks,4,2477.98
+2025-10-17,Gaseosa Colombiana 350ml,Bebidas,3,2568.4
+2025-10-17,Gaseosa Postobon Manzana 400ml,Bebidas,1,2712.79
+2025-10-17,Arroz Diana 1kg,Granos,4,4396.04
+2025-10-17,Aceite Premier 1L,Despensa,1,16568.34
+2025-10-17,Huevos AA x30,Despensa,4,12332.4
+2025-10-17,Queso Campesino 250g,Lacteos,3,6872.66
+2025-10-17,Leche Entera Alpina 900ml,Lacteos,5,4183.43
+2025-10-17,Cerveza Poker Sixpack,Bebidas,3,12560.97
+2025-10-18,Papas Margarita 30g,Snacks,4,2589.68
+2025-10-18,Gaseosa Colombiana 350ml,Bebidas,3,2857.34
+2025-10-18,Gaseosa Postobon Manzana 400ml,Bebidas,4,2582.5
+2025-10-18,Arroz Diana 1kg,Granos,5,4294.13
+2025-10-18,Aceite Premier 1L,Despensa,2,16571.65
+2025-10-18,Huevos AA x30,Despensa,1,13586.32
+2025-10-18,Queso Campesino 250g,Lacteos,7,6520.47
+2025-10-18,Leche Entera Alpina 900ml,Lacteos,10,4360.05
+2025-10-18,Cerveza Poker Sixpack,Bebidas,4,12167.96
+2025-10-19,Papas Margarita 30g,Snacks,3,2631.03
+2025-10-19,Gaseosa Colombiana 350ml,Bebidas,1,2956.32
+2025-10-19,Gaseosa Postobon Manzana 400ml,Bebidas,1,2700.34
+2025-10-19,Arroz Diana 1kg,Granos,1,4790.8
+2025-10-19,Frijol Cargamanto 500g,Granos,3,5101.44
+2025-10-19,Aceite Premier 1L,Despensa,2,16490.46
+2025-10-19,Leche Entera Alpina 900ml,Lacteos,2,4057.56
+2025-10-19,Cerveza Poker Sixpack,Bebidas,2,12554.56
+2025-10-20,Papas Margarita 30g,Snacks,8,2342.91
+2025-10-20,Gaseosa Colombiana 350ml,Bebidas,2,2673.8
+2025-10-20,Gaseosa Postobon Manzana 400ml,Bebidas,4,2518.07
+2025-10-20,Frijol Cargamanto 500g,Granos,1,5070.86
+2025-10-20,Aceite Premier 1L,Despensa,2,15791.99
+2025-10-20,Huevos AA x30,Despensa,2,13629.19
+2025-10-20,Queso Campesino 250g,Lacteos,5,6678.17
+2025-10-20,Leche Entera Alpina 900ml,Lacteos,1,3890.76
+2025-10-20,Cerveza Poker Sixpack,Bebidas,4,12312.49
+2025-10-21,Papas Margarita 30g,Snacks,2,2509.8
+2025-10-21,Gaseosa Colombiana 350ml,Bebidas,4,2842.24
+2025-10-21,Gaseosa Postobon Manzana 400ml,Bebidas,3,2596.96
+2025-10-21,Arroz Diana 1kg,Granos,1,4392.78
+2025-10-21,Frijol Cargamanto 500g,Granos,1,5485.88
+2025-10-21,Aceite Premier 1L,Despensa,3,16843.94
+2025-10-21,Huevos AA x30,Despensa,2,13848.42
+2025-10-21,Queso Campesino 250g,Lacteos,1,7117.1
+2025-10-21,Leche Entera Alpina 900ml,Lacteos,4,4066.47
+2025-10-21,Cerveza Poker Sixpack,Bebidas,2,12723.73
+2025-10-22,Papas Margarita 30g,Snacks,3,2475.86
+2025-10-22,Gaseosa Colombiana 350ml,Bebidas,3,2740.01
+2025-10-22,Arroz Diana 1kg,Granos,3,4654.19
+2025-10-22,Frijol Cargamanto 500g,Granos,4,5040.45
+2025-10-22,Aceite Premier 1L,Despensa,1,16639.8
+2025-10-22,Huevos AA x30,Despensa,2,13072.09
+2025-10-22,Queso Campesino 250g,Lacteos,2,6716.23
+2025-10-22,Leche Entera Alpina 900ml,Lacteos,3,4338.62
+2025-10-22,Cerveza Poker Sixpack,Bebidas,1,11801.46
+2025-10-23,Papas Margarita 30g,Snacks,2,2423.09
+2025-10-23,Gaseosa Colombiana 350ml,Bebidas,5,2694.73
+2025-10-23,Gaseosa Postobon Manzana 400ml,Bebidas,3,2741.51
+2025-10-23,Frijol Cargamanto 500g,Granos,2,4927.77
+2025-10-23,Aceite Premier 1L,Despensa,2,15770.47
+2025-10-23,Huevos AA x30,Despensa,4,13922.38
+2025-10-23,Queso Campesino 250g,Lacteos,2,6301.33
+2025-10-23,Leche Entera Alpina 900ml,Lacteos,2,4095.39
+2025-10-23,Cerveza Poker Sixpack,Bebidas,2,11504.44
+2025-10-24,Papas Margarita 30g,Snacks,4,2501.54
+2025-10-24,Gaseosa Colombiana 350ml,Bebidas,3,2649.26
+2025-10-24,Gaseosa Postobon Manzana 400ml,Bebidas,6,2514.8
+2025-10-24,Arroz Diana 1kg,Granos,2,4061.01
+2025-10-24,Frijol Cargamanto 500g,Granos,2,5172.07
+2025-10-24,Aceite Premier 1L,Despensa,2,16558.51
+2025-10-24,Huevos AA x30,Despensa,1,13606.55
+2025-10-24,Queso Campesino 250g,Lacteos,3,6800.14
+2025-10-24,Leche Entera Alpina 900ml,Lacteos,5,4198.6
+2025-10-24,Cerveza Poker Sixpack,Bebidas,8,12258.28
+2025-10-25,Papas Margarita 30g,Snacks,6,2660.23
+2025-10-25,Gaseosa Colombiana 350ml,Bebidas,4,2604.69
+2025-10-25,Gaseosa Postobon Manzana 400ml,Bebidas,1,2612.38
+2025-10-25,Arroz Diana 1kg,Granos,2,4458.85
+2025-10-25,Frijol Cargamanto 500g,Granos,2,4993.18
+2025-10-25,Aceite Premier 1L,Despensa,1,16855.12
+2025-10-25,Huevos AA x30,Despensa,5,13477.49
+2025-10-25,Queso Campesino 250g,Lacteos,2,6983.02
+2025-10-25,Leche Entera Alpina 900ml,Lacteos,2,4197.06
+2025-10-25,Cerveza Poker Sixpack,Bebidas,5,12266.65
+2025-10-26,Papas Margarita 30g,Snacks,2,2364.86
+2025-10-26,Gaseosa Colombiana 350ml,Bebidas,5,2788.44
+2025-10-26,Gaseosa Postobon Manzana 400ml,Bebidas,2,2429.11
+2025-10-26,Arroz Diana 1kg,Granos,6,4273.17
+2025-10-26,Huevos AA x30,Despensa,3,13167.16
+2025-10-26,Queso Campesino 250g,Lacteos,4,6973.68
+2025-10-26,Leche Entera Alpina 900ml,Lacteos,4,4061.17
+2025-10-26,Cerveza Poker Sixpack,Bebidas,1,11405.81
+2025-10-27,Papas Margarita 30g,Snacks,3,2708.95
+2025-10-27,Gaseosa Colombiana 350ml,Bebidas,2,2894.25
+2025-10-27,Gaseosa Postobon Manzana 400ml,Bebidas,2,2535.77
+2025-10-27,Aceite Premier 1L,Despensa,1,16216.7
+2025-10-27,Huevos AA x30,Despensa,4,13817.82
+2025-10-27,Queso Campesino 250g,Lacteos,3,6605.07
+2025-10-27,Leche Entera Alpina 900ml,Lacteos,10,4125.76
+2025-10-27,Cerveza Poker Sixpack,Bebidas,3,11348.56
+2025-10-28,Papas Margarita 30g,Snacks,3,2547.24
+2025-10-28,Gaseosa Postobon Manzana 400ml,Bebidas,2,2469.96
+2025-10-28,Arroz Diana 1kg,Granos,3,4608.81
+2025-10-28,Frijol Cargamanto 500g,Granos,1,5636.74
+2025-10-28,Huevos AA x30,Despensa,1,13366.61
+2025-10-28,Queso Campesino 250g,Lacteos,2,6623.37
+2025-10-28,Leche Entera Alpina 900ml,Lacteos,7,4316.69
+2025-10-28,Cerveza Poker Sixpack,Bebidas,3,11806.74
+2025-10-29,Papas Margarita 30g,Snacks,1,2404.61
+2025-10-29,Gaseosa Postobon Manzana 400ml,Bebidas,2,2611.01
+2025-10-29,Arroz Diana 1kg,Granos,2,4605.19
+2025-10-29,Frijol Cargamanto 500g,Granos,1,5362.09
+2025-10-29,Aceite Premier 1L,Despensa,4,16308.22
+2025-10-29,Huevos AA x30,Despensa,1,12823.71
+2025-10-29,Queso Campesino 250g,Lacteos,2,6898.91
+2025-10-29,Leche Entera Alpina 900ml,Lacteos,1,4101.83
+2025-10-29,Cerveza Poker Sixpack,Bebidas,4,12134.95
+2025-10-30,Papas Margarita 30g,Snacks,5,2449.58
+2025-10-30,Gaseosa Colombiana 350ml,Bebidas,2,2790.87
+2025-10-30,Gaseosa Postobon Manzana 400ml,Bebidas,2,2486.93
+2025-10-30,Arroz Diana 1kg,Granos,1,4304.55
+2025-10-30,Frijol Cargamanto 500g,Granos,2,5453.21
+2025-10-30,Aceite Premier 1L,Despensa,2,17041.57
+2025-10-30,Huevos AA x30,Despensa,3,13923.03
+2025-10-30,Queso Campesino 250g,Lacteos,5,6731.58
+2025-10-30,Leche Entera Alpina 900ml,Lacteos,3,4168.62
+2025-10-30,Cerveza Poker Sixpack,Bebidas,1,12461.55
+2025-10-31,Papas Margarita 30g,Snacks,6,2269.08
+2025-10-31,Gaseosa Colombiana 350ml,Bebidas,11,2817.59
+2025-10-31,Gaseosa Postobon Manzana 400ml,Bebidas,6,2599.42
+2025-10-31,Arroz Diana 1kg,Granos,1,4620.37
+2025-10-31,Frijol Cargamanto 500g,Granos,3,4884.28
+2025-10-31,Aceite Premier 1L,Despensa,4,16264.36
+2025-10-31,Huevos AA x30,Despensa,4,12337.19
+2025-10-31,Queso Campesino 250g,Lacteos,2,7098.43
+2025-10-31,Leche Entera Alpina 900ml,Lacteos,10,4039.44
+2025-10-31,Cerveza Poker Sixpack,Bebidas,5,11867.68

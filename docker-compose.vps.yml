@@ -1,0 +1,65 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: septima_mysql_vps
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME:-la_septima_estrella}
+    expose:
+      - "3306"
+    volumes:
+      - vps_mysql_data:/var/lib/mysql
+      - ./deploy/vps/mysql-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "mysqladmin ping -h 127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: septima_app_vps
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      DB_HOST: mysql
+      DB_PORT: "3306"
+      DB_USER: root
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_NAME:-la_septima_estrella}
+      APP_SECRET_KEY: ${APP_SECRET_KEY}
+      PASSWORD_HASH_ITERATIONS: ${PASSWORD_HASH_ITERATIONS:-390000}
+      FLASK_DEBUG: "0"
+      PORT: "5000"
+      SESSION_COOKIE_SECURE: ${SESSION_COOKIE_SECURE:-0}
+      SESSION_COOKIE_SAMESITE: ${SESSION_COOKIE_SAMESITE:-Lax}
+      APP_AUTO_BACKUP: ${APP_AUTO_BACKUP:-1}
+      APP_AUTO_BACKUP_INTERVAL: ${APP_AUTO_BACKUP_INTERVAL:-120}
+      APP_BACKUP_DIR: /app/backups
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+      OPENAI_API_BASE: ${OPENAI_API_BASE:-https://api.openai.com/v1}
+      OPENAI_TIMEOUT_SECONDS: ${OPENAI_TIMEOUT_SECONDS:-20}
+      OPENAI_MAX_OUTPUT_TOKENS: ${OPENAI_MAX_OUTPUT_TOKENS:-500}
+      AI_ENGINE: ${AI_ENGINE:-auto}
+      OLLAMA_API_BASE: ${OLLAMA_API_BASE:-}
+      OLLAMA_API_MODEL: ${OLLAMA_API_MODEL:-llama3.1:8b}
+      OLLAMA_TIMEOUT_SECONDS: ${OLLAMA_TIMEOUT_SECONDS:-45}
+      DEFAULT_ADMIN_PASSWORD: ${DEFAULT_ADMIN_PASSWORD:-Admin2026@}
+      DEFAULT_VENDOR_PASSWORD: ${DEFAULT_VENDOR_PASSWORD:-Vendedor2026@}
+    ports:
+      - "${APP_PUBLIC_PORT:-80}:5000"
+    volumes:
+      - ./backups:/app/backups
+
+volumes:
+  vps_mysql_data:

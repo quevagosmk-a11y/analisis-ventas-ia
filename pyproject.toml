@@ -1,0 +1,40 @@
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.venv
+  | \.venv-linux
+  | \.venvtest
+  | build
+  | dist
+  | node_modules
+)/
+'''
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+exclude = [
+  ".venv",
+  ".venv-linux",
+  ".venvtest",
+  "node_modules",
+  "build",
+  "dist",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["ai", "analysis", "data", "db", "messaging", "utils"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = ["E402"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

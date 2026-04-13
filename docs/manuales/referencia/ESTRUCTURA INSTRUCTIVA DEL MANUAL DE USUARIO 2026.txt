@@ -1,0 +1,141 @@
+
+
+===== PAGE 1 =====
+ESTRUCTURA INSTRUCTIVA DEL MANUAL DE 
+USUARIO 
+(Guía para estudiantes – conforme a ICONTEC NTC 1486) 
+ 
+PORTADA (OBLIGATORIA – ICONTEC NTC 1486) 
+La portada debe contener, centrado y con jerarquía tipográfica clara: 
+• Nombre de la institución 
+• Facultad y programa académico 
+• Título del documento: 
+ 
+MANUAL DE USUARIO DEL SISTEMA [Nombre del sistema] 
+• Nombre del proyecto (si aplica) 
+• Nombre(s) del autor(es) 
+• Nombre del docente 
+• Ciudad 
+• Año 
+Indicaciones al estudiante: 
+El título debe reflejar claramente que se trata de un manual de usuario y no de un 
+manual técnico o de instalación. No se incluyen imágenes ni logotipos decorativos 
+que rompan la formalidad académica. 
+  
+
+===== PAGE 2 =====
+TABLA DE CONTENIDO 
+Debe incluir: 
+• Todos los títulos y subtítulos 
+• Numeración progresiva (1, 1.1, 1.2, etc.) 
+• Correspondencia exacta con las páginas 
+1. INTRODUCCIÓN 
+¿Qué debe contener este apartado? 
+En este apartado el estudiante debe explicar qué es un manual de usuario y para 
+qué sirve , contextualizando su importancia dentro del sistema desarrollado o 
+analizado. 
+Debe incluir: 
+• Definición general de manual de usuario 
+• Importancia del manual como medio de apoyo para el usuario final 
+• Alcance del documento (qué cubre y qué no cubre) 
+• Tipo de usuario al que está dirigido (usuario final, administrativo, operativo, 
+etc.) 
+• Breve descripción del contenido del manual 
+Indicación clave: 
+No se deben describir funcionalidades técnicas ni pantallas en este apartado. Es un 
+texto introductorio y contextual, no operativo. 
+2. DESCRIPCIÓN GENERAL DEL SISTEMA 
+¿Qué debe describir el estudiante? 
+En este apartado se debe presentar una visión global del sistema, sin entrar aún 
+en instrucciones detalladas. 
+Debe incluir: 
+• Nombre del sistema 
+• Objetivo principal del sistema 
+• Problema o necesidad que resuelve 
+• Procesos generales que soporta el sistema 
+• Tipo de sistema (web, escritorio, móvil, manual, semiautomatizado, etc.) 
+• Perfil general del usuario 
+
+===== PAGE 3 =====
+Importante: 
+La descripción debe ser comprensible para un usuario que no participó en el 
+desarrollo del sistema. Evitar tecnicismos innecesarios. 
+3. DESCRIPCIÓN DE LAS OPCIONES DEL MENÚ 
+Propósito del apartado 
+Permitir que el usuario comprenda la estructura de navegació n del sistema  
+antes de usarlo. 
+Contenido requerido 
+Para cada opción del menú se debe indicar: 
+• Nombre de la opción 
+• Ubicación dentro del menú 
+• Función principal 
+• Relación con otros módulos u opciones 
+• Restricciones de acceso (si aplica) 
+Ejemplo de redacción esperada: 
+La opción “Gestión de Usuarios” permite registrar, modificar y consultar la 
+información básica de los usuarios del sistema. Esta opción solo está disponible 
+para perfiles administradores. 
+No se explica aún el paso a paso, solo el propósito funcional. 
+4. DESCRIPCIÓN Y FUNCIONALIDAD DE LAS 
+PANTALLAS DEL SISTEMA 
+Apartado central del manual 
+Aquí el estudiante debe guiar al usuario paso a paso, con precisión operativa. 
+Para cada pantalla se debe incluir: 
+• Nombre de la pantalla 
+• Imagen de la pantalla (Tener en cuenta como Figura x. debidamente 
+numerada) 
+• Campos presentes en la pantalla 
+• Descripción de cada campo (tipo de dato, obligatoriedad) 
+• Botones y acciones disponibles 
+• Flujo normal de uso 
+
+===== PAGE 4 =====
+• Validaciones del sistema 
+Nivel de detalle esperado: 
+El usuario debe poder ejecutar la tarea sin ayuda externa , únicamente leyendo 
+este apartado. 
+5. DESCRIPCIÓN DE LOS REPORTES DEL SISTEMA 
+¿Qué debe incluir? 
+Para cada reporte: 
+• Nombre del reporte 
+• Objetivo del reporte 
+• Información que contiene 
+• Filtros disponibles 
+• Formato de salida (pantalla, PDF, Excel, etc.) 
+• Uso del reporte para la toma de decisiones 
+Evitar: 
+Describir solo “el sistema genera reportes”. Se debe explicar qué información 
+entrega y para qué sirve. 
+6. INTERPRETACIÓN DE MENSAJES Y ERRORES 
+Contenido obligatorio 
+Este apartado debe ayudar al usuario a comprender y reaccionar correctamente 
+ante mensajes del sistema. 
+Debe incluir: 
+• Mensajes informativos 
+• Mensajes de advertencia 
+• Mensajes de error 
+• Causa probable del mensaje 
+• Acción recomendada al usuario 
+Ejemplo: 
+• Mensaje: “Datos incompletos” 
+• Causa: No se diligenció un campo obligatorio 
+• Acción: Verificar los campos marcados y completar la información 
+
+===== PAGE 5 =====
+7. PROCEDIMIENTO A SEGUIR EN CASO DE 
+FALLOS 
+Enfoque del apartado 
+Aquí se describen acciones básicas de contingencia , no soluciones técnicas 
+profundas. 
+Debe incluir: 
+• Qué hacer ante fallos comunes 
+• Cuando reiniciar el sistema 
+• Cuando contactar al administrador o soporte 
+• Información mínima a reportar (mensaje, pantalla, hora) 
+Importante: 
+Debe estar redactado en lenguaje claro y orientado al usuario final. 
+ELEMENTOS FINALES (ICONTEC) 
+• Glosario (si aplica) 
+• Anexos (capturas, ejemplos, formatos) 
+• Referencias (si se usaron fuentes externas) 
+ 

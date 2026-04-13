@@ -1,0 +1,56 @@
+@startuml
+left to right direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam usecase {
+  BackgroundColor #eef3ff
+  BorderColor #3157c4
+}
+
+actor "Usuario del sistema" as Usuario
+actor "Vendedor" as Vendedor
+actor "Gerente" as Gerente
+
+rectangle "Sistema La Séptima Estrella" {
+  package "Acceso general" {
+    usecase "Iniciar sesión" as UC_Login
+    usecase "Gestionar perfil" as UC_Profile
+    usecase "Consultar panel principal" as UC_Dashboard
+  }
+
+  package "Ventas e inventario" {
+    usecase "Registrar venta" as UC_RegisterSale
+    usecase "Consultar ventas recientes" as UC_RecentSales
+    usecase "Consultar productos" as UC_Products
+    usecase "Usar asistente IA" as UC_AI
+    usecase "Deshabilitar venta autorizada" as UC_DisableSale
+  }
+
+  package "Supervisión operativa" {
+    usecase "Gestionar productos" as UC_ManageProducts
+    usecase "Consultar reportes y estadísticas" as UC_Reports
+    usecase "Autorizar deshabilitación de venta" as UC_Authorize
+  }
+}
+
+Usuario --> UC_Login
+Usuario --> UC_Profile
+Usuario --> UC_Dashboard
+
+Vendedor --> UC_RegisterSale
+Vendedor --> UC_RecentSales
+Vendedor --> UC_Products
+Vendedor --> UC_AI
+Vendedor --> UC_DisableSale
+
+Gerente --> UC_ManageProducts
+Gerente --> UC_Reports
+Gerente --> UC_Authorize
+
+note right of UC_DisableSale
+La deshabilitación solo se realiza
+si la venta fue autorizada
+previamente por gerencia.
+end note
+
+@enduml

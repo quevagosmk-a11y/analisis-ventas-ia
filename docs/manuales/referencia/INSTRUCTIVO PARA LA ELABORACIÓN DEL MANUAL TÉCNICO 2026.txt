@@ -1,0 +1,219 @@
+
+
+===== PAGE 1 =====
+INSTRUCTIVO PARA LA ELABORACIÓN DEL 
+MANUAL TÉCNICO 
+(Guía académica – Actualizada) 
+CONSIDERACIONES GENERALES DEL MANUAL 
+TÉCNICO 
+El manual técnico es un documento dirigido a personal especializado, encargado 
+de la instalación, configuración, mantenimiento, despliegue, soporte y 
+evolución del sistema . A diferencia del manual de usuario, este documento sí 
+describe aspectos internos, arquitectónicos y tecnológicos del sistema. 
+Actualización importante: 
+Hoy no es obligatorio entregar el manual en HTML; sin embargo, es válido indicar 
+que el manual puede presentarse en formato digital (Word o PDF)  y, 
+opcionalmente, en repositorios técnicos (Markdown, Wiki, Git). El manual de 
+usuario en video es un complemento, no un reemplazo. 
+PORTADA (ICONTEC NTC 1486) 
+Debe contener: 
+• Nombre de la institución 
+• Facultad y programa 
+• Título: 
+MANUAL TÉCNICO DEL SISTEMA [Nombre del sistema] 
+• Nombre del proyecto 
+• Autor(es) 
+• Director o docente 
+• Ciudad 
+• Año 
+ 
+TABLA DE CONTENIDO 
+• Numeración progresiva 
+• Coincidencia exacta con los títulos del documento 
+• Inclusión de anexos y figuras 
+PRESENTACIÓN 
+
+===== PAGE 2 =====
+¿Qué debe responder el estudiante? 
+Este apartado contextualiza técnicamente el documento. 
+Debe incluir: 
+• A qué hace referencia el manual técnico 
+• A quién va dirigido el manual, por ejemplo: 
+o Ingenieros de sistemas 
+o Administradores de sistemas 
+o Desarrolladores 
+o Administradores de bases de datos 
+o Personal de soporte técnico 
+• Nivel de conocimiento requerido 
+• Visión general de cómo funciona el sistema (por ejemplo: arquitectura en 
+capas) 
+Actualización: 
+Se recomienda describir la arquitectura usando términos actuales como: 
+• Arquitectura en capas 
+• Cliente-servidor 
+• Arquitectura web 
+• API / servicios 
+• Arquitectura monolítica o modular 
+RESUMEN EJECUTIVO 
+Propósito 
+Permitir que un lector técnico comprenda rápidamente el sistema, sin leer todo el 
+documento. 
+Debe incluir: 
+• Descripción global del sistema 
+• Objetivo principal 
+• Tecnologías utilizadas 
+• Arquitectura general 
+• Número de capítulos del manual y breve descripción de cada uno 
+FINALIDAD DEL MANUAL 
+Aquí el estudiante debe explicar para qué sirve el manual técnico. 
+
+===== PAGE 3 =====
+Ejemplos de finalidad: 
+• Capacitar al personal técnico en la instalación del sistema 
+• Facilitar tareas de mantenimiento correctivo y evolutivo 
+• Servir como referencia para futuras modificaciones 
+• Documentar técnicamente el sistema desarrollado 
+INTRODUCCIÓN 
+Este apartado debe: 
+• Explicar la estructura del manual 
+• Indicar qué contiene cada capítulo 
+• Orientar al lector sobre cómo usar el documento 
+No repetir la presentación ni el resumen ejecutivo. 
+1. REQUISITOS DEL SISTEMA 
+Contenido obligatorio 
+1.1 Requisitos de hardware 
+• Procesador 
+• Memoria RAM 
+• Almacenamiento 
+• Arquitectura (32/64 bits) 
+• Requisitos mínimos y recomendados 
+1.2 Requisitos de software 
+• Sistema operativo 
+• Lenguajes de programación 
+• Frameworks 
+• Motores de base de datos 
+• Navegadores compatibles 
+• Librerías o dependencias 
+1.3 Configuraciones previas 
+• Variables de entorno 
+• Puertos 
+• Permisos 
+• Servicios necesarios 
+
+===== PAGE 4 =====
+1.4 Portabilidad y adaptabilidad 
+• Capacidad del sistema para ejecutarse en diferentes entornos 
+• Facilidad de actualización 
+1.5 Contingencia 
+• Qué ocurre ante fallos 
+• Respaldos 
+• Recuperación básica del sistema 
+2. DIAGRAMAS DE MODELAMIENTO 
+Actualización: 
+Los diagramas deben usarse cuando aportan valor, no por obligación. 
+Diagramas sugeridos: 
+• Diagrama de procesos de negocio (BPMN) 
+• Diagramas de casos de uso 
+• Diagramas de actividades 
+• Diagramas de clases 
+• Diagramas de arquitectura (recomendado) 
+Cada diagrama debe incluir: 
+• Descripción textual 
+• Propósito 
+• Relación con el sistema 
+3. ASPECTOS TÉCNICOS DEL DESARROLLO DEL 
+SISTEMA 
+3.1 Arquitectura del sistema 
+Descripción general de las capas: 
+a. Capa de presentación 
+La capa de presentación corresponde al componente del sistema encargado de la 
+interacción con el usuario final. Su función principal es permitir la visualización de 
+la información y la captura de datos de manera clara, intuitiva y controlada. 
+En este apartado se debe describir: 
+
+===== PAGE 5 =====
+• Tecnologías utilizadas (por ejemplo, HTML, CSS, JavaScript, frameworks 
+web o interfaces gráficas). 
+• Tipo de interfaz (web, escritorio, móvil). 
+• Principios de usabilidad aplicados. 
+• Forma en que el usuario navega e interactúa con el sistema. 
+i. Relación de directorios 
+Aquí se  debe explicar la estructura de carpetas  que componen la capa de 
+presentación, indicando la función de cada directorio relevante. 
+Ejemplo: 
+• /views: contiene las vistas o pantallas del sistema. 
+• /assets: almacena recursos como imágenes, hojas de estilo y scripts. 
+• /components: agrupa elementos reutilizables de la interfaz. 
+El objetivo es que un desarrollador pueda identificar rápidamente dónde se 
+encuentra cada elemento visual del sistema. 
+ii. Mapa de navegación o estructura del sistema 
+Este subapartado describe la organización lógica de las pantallas y la forma en 
+que el usuario se desplaza entre ellas. 
+Se debe indicar: 
+• Pantalla inicial 
+• Menús principales 
+• Submenús 
+• Flujo general de navegación 
+Ejemplo: 
+Desde la pantalla principal el usuario puede acceder al mó dulo de gestión de 
+clientes, donde puede registrar, consultar o modificar información. 
+iii. Archivos de configuración 
+En este apartado se describen los archivos que controlan parámetros generales 
+del sistema, sin entrar en código fuente detallado. 
+Debe indicarse: 
+• Nombre del archivo 
+• Propósito 
+
+===== PAGE 6 =====
+• Tipo de configuraciones que contiene (rutas, conexiones, variables de 
+entorno) 
+Ejemplo: 
+Un archivo de configuración define la URL del servidor, el idioma del sistema y el 
+modo de ejecución (desarrollo o producción). 
+c. Capa de base de datos 
+La capa de base de datos es responsable del almacenamiento, organización y 
+recuperación de la información del sistema de manera estructurada y segura. 
+En este apartado se debe describir: 
+• Tipo de base de datos utilizada (relacional, no relacional). 
+• Motor de base de datos. 
+• Estructura general de la información. 
+• Políticas básicas de integridad y consistencia. 
+i. Diagrama entidad–relación 
+Se debe presentar el diagrama y explicar brevemente: 
+• Entidades principales 
+• Relaciones entre ellas 
+• Llaves primarias y foráneas 
+Ejemplo: 
+La entidad Cliente se relaciona con la entidad Pedido, donde un cliente puede 
+realizar varios pedidos. 
+ii. Diccionario de datos 
+Aquí se documentan las tablas y campos principales, indicando: 
+• Nombre del campo 
+• Tipo de dato 
+• Descripción 
+• Restricciones relevantes 
+El objetivo es que cualquier desarrollador pueda comprender la estructura de la 
+base de datos sin necesidad de acceder directamente al gestor. 
+4. INSTALACIÓN DEL SISTEMA Y SERVICIOS 
+4.1 Instalación del sistema 
+
+===== PAGE 7 =====
+• Paso a paso 
+• Requisitos previos 
+• Errores comunes 
+4.2 Instalación de servicios (si aplica) 
+• Servidor web 
+• Base de datos 
+• Servicios adicionales 
+5. REQUERIMIENTOS DE HARDWARE 
+(OPERACIÓN) 
+• Hardware necesario para operación continua 
+• Escalabilidad básica 
+• Recomendaciones técnicas 
+6. BIBLIOGRAFÍA 
+• Normas técnicas 
+• Documentación oficial 
+• Libros 
+• Artículos 
+(Formato ICONTEC) 
+ 

@@ -1,0 +1,707 @@
+{
+  "generated_from": "artifacts/tests/pytest-results.xml",
+  "suite": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "106",
+    "time": "42.173",
+    "timestamp": "2026-04-10T15:34:21.567740-05:00",
+    "hostname": "PC-CESAR"
+  },
+  "files": {
+    "tests/test_ai_reports.py": {
+      "tests": 9,
+      "passed": 9,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_ai_generate_report_endpoint",
+          "time": 0.054,
+          "status": "passed"
+        },
+        {
+          "name": "test_ai_last_report_endpoint",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_ai_report_requires_admin",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_ia_forecast_endpoint_returns_payload",
+          "time": 0.058,
+          "status": "passed"
+        },
+        {
+          "name": "test_ia_forecast_endpoint_validates_inputs",
+          "time": 0.003,
+          "status": "passed"
+        },
+        {
+          "name": "test_ia_forecast_endpoint_without_sales",
+          "time": 19.09,
+          "status": "passed"
+        },
+        {
+          "name": "test_ia_forecast_includes_product_image_urls",
+          "time": 0.008,
+          "status": "passed"
+        },
+        {
+          "name": "test_generate_ai_report_heuristic_uses_calendar_window",
+          "time": 0.02,
+          "status": "passed"
+        },
+        {
+          "name": "test_build_demand_forecast_rows_uses_current_date_for_runout",
+          "time": 0.0,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_audit_endpoints.py": {
+      "tests": 6,
+      "passed": 6,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_audit_endpoint_requires_audit_permission",
+          "time": 0.003,
+          "status": "passed"
+        },
+        {
+          "name": "test_audit_endpoint_merges_current_and_legacy_entries",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_audit_endpoint_filters_alias_event_names",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_audit_endpoint_hides_export_events",
+          "time": 0.003,
+          "status": "passed"
+        },
+        {
+          "name": "test_audit_export_endpoint_returns_excel",
+          "time": 0.072,
+          "status": "passed"
+        },
+        {
+          "name": "test_build_audit_export_file_uses_main_label_helpers",
+          "time": 0.035,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_chat_ai.py": {
+      "tests": 5,
+      "passed": 5,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_generate_chat_response_stock_question",
+          "time": 0.058,
+          "status": "passed"
+        },
+        {
+          "name": "test_generate_chat_response_combo_question",
+          "time": 0.032,
+          "status": "passed"
+        },
+        {
+          "name": "test_generate_chat_response_greeting_returns_help",
+          "time": 0.032,
+          "status": "passed"
+        },
+        {
+          "name": "test_build_product_catalog_snapshot_uses_main_inventory_fetcher",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_compute_chat_insights_uses_main_inventory_fetcher",
+          "time": 0.03,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_config_roles_endpoints.py": {
+      "tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_iva_config_get_and_put_work",
+          "time": 0.006,
+          "status": "passed"
+        },
+        {
+          "name": "test_iva_config_put_requires_manage_permission",
+          "time": 0.003,
+          "status": "passed"
+        },
+        {
+          "name": "test_roles_endpoint_lists_default_roles",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_roles_endpoint_creates_custom_role",
+          "time": 0.003,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_data_paths.py": {
+      "tests": 1,
+      "passed": 1,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_find_existing_sales_csv_resolves_project_relative_path",
+          "time": 0.138,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_demo_generator.py": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_build_demo_sales_dataframe_returns_consistent_columns",
+          "time": 0.027,
+          "status": "passed"
+        },
+        {
+          "name": "test_generate_demo_sales_csv_writes_file",
+          "time": 0.193,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_frontend_cache_busting.py": {
+      "tests": 1,
+      "passed": 1,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_serve_index_injects_current_asset_version",
+          "time": 0.015,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_ia_endpoints_auth.py": {
+      "tests": 5,
+      "passed": 5,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_ia_chat_requires_login",
+          "time": 0.001,
+          "status": "passed"
+        },
+        {
+          "name": "test_ia_chat_logged_user_ok",
+          "time": 0.043,
+          "status": "passed"
+        },
+        {
+          "name": "test_ia_chat_greeting_returns_help",
+          "time": 0.034,
+          "status": "passed"
+        },
+        {
+          "name": "test_ia_recommendations_returns_extended_payload",
+          "time": 0.004,
+          "status": "passed"
+        },
+        {
+          "name": "test_ia_forecast_requires_admin_role",
+          "time": 0.002,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_operations_improvements.py": {
+      "tests": 14,
+      "passed": 14,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_login_rate_limit_blocks_after_repeated_failures",
+          "time": 0.003,
+          "status": "passed"
+        },
+        {
+          "name": "test_get_login_throttle_seconds_left_uses_main_helpers",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_process_login_request_uses_main_helpers",
+          "time": 0.001,
+          "status": "passed"
+        },
+        {
+          "name": "test_apply_schema_migrations_includes_sales_actor_foreign_keys",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_manual_backup_endpoint_returns_artifacts",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_restore_backup_endpoint_uses_restore_helper",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_build_backup_artifacts_uses_main_helpers",
+          "time": 0.076,
+          "status": "passed"
+        },
+        {
+          "name": "test_perform_backup_uses_main_serializer",
+          "time": 0.106,
+          "status": "passed"
+        },
+        {
+          "name": "test_restore_backup_snapshot_uses_main_loader",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_inventory_export_endpoint_returns_csv",
+          "time": 0.048,
+          "status": "passed"
+        },
+        {
+          "name": "test_inventory_export_endpoint_returns_pdf",
+          "time": 0.007,
+          "status": "passed"
+        },
+        {
+          "name": "test_load_inventory_import_rows_parses_csv",
+          "time": 0.023,
+          "status": "passed"
+        },
+        {
+          "name": "test_enrich_dashboard_payload_adds_operational_indicators",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_product_needs_stock_alert_includes_near_minimum_follow_up",
+          "time": 0.0,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_password_hashing.py": {
+      "tests": 3,
+      "passed": 3,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_hash_password_uses_pbkdf2_scheme",
+          "time": 0.444,
+          "status": "passed"
+        },
+        {
+          "name": "test_verify_password_supports_legacy_sha256",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_password_defaults_are_consistent_across_modules",
+          "time": 0.0,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_permissions_exports.py": {
+      "tests": 8,
+      "passed": 8,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_products_endpoint_requires_products_view",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_seller_reports_endpoint_requires_reports_permission",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_seller_report_export_requires_reports_permission",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_report_export_endpoint_returns_pdf",
+          "time": 0.007,
+          "status": "passed"
+        },
+        {
+          "name": "test_stats_export_endpoint_returns_excel",
+          "time": 0.038,
+          "status": "passed"
+        },
+        {
+          "name": "test_dashboard_returns_filtered_payment_breakdown",
+          "time": 0.004,
+          "status": "passed"
+        },
+        {
+          "name": "test_load_dashboard_payload_uses_main_helpers",
+          "time": 0.001,
+          "status": "passed"
+        },
+        {
+          "name": "test_load_sales_report_payload_uses_main_dependencies",
+          "time": 0.001,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_registrar_venta.py": {
+      "tests": 1,
+      "passed": 1,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_registrar_venta",
+          "time": 0.005,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_sale_voiding.py": {
+      "tests": 8,
+      "passed": 8,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_manager_can_authorize_sale_disable",
+          "time": 0.003,
+          "status": "passed"
+        },
+        {
+          "name": "test_seller_cannot_disable_without_authorization",
+          "time": 0.003,
+          "status": "passed"
+        },
+        {
+          "name": "test_seller_can_disable_authorized_sale_and_restore_stock",
+          "time": 0.003,
+          "status": "passed"
+        },
+        {
+          "name": "test_seller_can_disable_authorized_sale_from_another_user",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_admin_can_disable_sale_without_previous_authorization",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_sale_detail_includes_void_capabilities",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_seller_can_open_sale_detail_from_another_user",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_recent_sales_route_lists_all_sales_for_seller",
+          "time": 0.002,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_sales_flows.py": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_sale_rejected_when_price_change_exceeds_without_force",
+          "time": 0.004,
+          "status": "passed"
+        },
+        {
+          "name": "test_sale_with_force_records_audit",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_serialize_product_row_includes_individual_iva_fields",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_sale_rolls_back_on_db_failure",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_sale_falls_back_to_configured_iva_rate",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_sale_prefers_product_specific_iva_rate",
+          "time": 0.003,
+          "status": "passed"
+        },
+        {
+          "name": "test_sale_detail_returns_iva_breakdown",
+          "time": 0.003,
+          "status": "passed"
+        },
+        {
+          "name": "test_load_sale_detail_payload_uses_main_builder",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_inventory_movement_post_updates_stock",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_inventory_movement_post_rejects_negative_stock",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_inventory_movement_get_returns_rows_and_summary",
+          "time": 0.004,
+          "status": "passed"
+        },
+        {
+          "name": "test_inventory_movement_requires_admin_role",
+          "time": 0.003,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_sessions.py": {
+      "tests": 6,
+      "passed": 6,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_sessions_cleanup_endpoint_returns_stats",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_sessions_cleanup_requires_admin",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_current_user_clears_stale_session_after_server_restart",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_perform_sessions_cleanup_uses_main_dependencies",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_finalize_login_session_uses_main_helpers",
+          "time": 0.001,
+          "status": "passed"
+        },
+        {
+          "name": "test_require_permission_uses_main_permissions_helper",
+          "time": 0.001,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_state_routes_audit.py": {
+      "tests": 2,
+      "passed": 2,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_product_state_endpoint_exists_and_records_audit",
+          "time": 0.003,
+          "status": "passed"
+        },
+        {
+          "name": "test_user_state_endpoint_records_audit",
+          "time": 0.002,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_users_roles.py": {
+      "tests": 7,
+      "passed": 7,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_normalize_user_role_accepts_system_and_custom_roles",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_normalize_user_role_rejects_invalid_pattern",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_coerce_user_role_falls_back_to_vendedor",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_build_user_payload_preserves_custom_role",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_vendor_default_permissions_exclude_reports",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_setup_users_cli_creates_admin_and_seller",
+          "time": 0.002,
+          "status": "passed"
+        },
+        {
+          "name": "test_setup_users_cli_rejects_same_username",
+          "time": 0.001,
+          "status": "passed"
+        }
+      ]
+    },
+    "tests/test_validations.py": {
+      "tests": 12,
+      "passed": 12,
+      "failed": 0,
+      "errored": 0,
+      "skipped": 0,
+      "cases": [
+        {
+          "name": "test_coerce_decimal_accepts_valid_value",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_coerce_decimal_rejects_invalid_number",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_coerce_decimal_respects_limits",
+          "time": 0.001,
+          "status": "passed"
+        },
+        {
+          "name": "test_coerce_int_accepts_valid_value",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_coerce_int_rejects_invalid",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_coerce_int_respects_limits",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_validate_product_payload_returns_normalized_values",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_validate_product_payload_collects_errors",
+          "time": 0.001,
+          "status": "passed"
+        },
+        {
+          "name": "test_coerce_decimal_accepts_currency_variants",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_coerce_decimal_rejects_alpha_characters",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_coerce_int_accepts_thousand_separators",
+          "time": 0.0,
+          "status": "passed"
+        },
+        {
+          "name": "test_coerce_int_rejects_fractional_values",
+          "time": 0.001,
+          "status": "passed"
+        }
+      ]
+    }
+  }
+}

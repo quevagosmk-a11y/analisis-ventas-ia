@@ -1,0 +1,20 @@
+{
+  "base_url": "http://127.0.0.1:5000/",
+  "user": "admin",
+  "date_from": "2026-01-01",
+  "date_to": "2026-04-06",
+  "captured": {
+    "login": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\01_login.png",
+    "dashboard": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\02_dashboard.png",
+    "sales": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\03_sales.png",
+    "sale_detail": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\04_sale_detail.png",
+    "products": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\05_products.png",
+    "reports": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\06_reports.png",
+    "statistics": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\07_statistics.png",
+    "forecast": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\08_forecast.png",
+    "users": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\09_users.png",
+    "audit": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\10_audit.png",
+    "backups": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\11_backups.png",
+    "account": "C:\\Users\\User\\Documents\\septima estrella1\\analisis-ventas-ia\\docs\\manuales\\assets\\screenshots\\12_account.png"
+  }
+}

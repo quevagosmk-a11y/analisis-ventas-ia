@@ -1,0 +1,2069 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="La Septima Estrella integra inventario, ventas y analítica con IA para tiendas, incluso sin conexión."
+    />
+    <link rel="canonical" href="http://127.0.0.1:5000/" />
+    <title>La Septima Estrella - Sistema de Inventario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      as="style"
+      crossorigin="anonymous"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      as="style"
+      crossorigin="anonymous"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <link
+      rel="preload"
+      href="style.css?v=__ASSET_VERSION__"
+      as="style"
+      onload="
+        this.onload = null;
+        this.rel = 'stylesheet';
+      "
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      />
+      <link rel="stylesheet" href="style.css?v=__ASSET_VERSION__" />
+    </noscript>
+    <!-- Estilos principales movidos a style.css -->
+  </head>
+  <body>
+    <a href="#mainContent" class="skip-link">Saltar al contenido principal</a>
+    <div id="loginPage" class="login-screen">
+      <div class="card login-card">
+        <div class="login-card__showcase">
+          <div class="login-badge">
+            <i class="bi bi-stars" aria-hidden="true"></i>
+            <span>Plataforma operativa</span>
+          </div>
+          <div class="login-brand-mark" aria-hidden="true">
+            <span class="login-brand-mark__orb"></span>
+            <span class="login-brand-mark__text">L7</span>
+          </div>
+          <div class="login-copy">
+            <p class="login-kicker mb-2">La Septima Estrella</p>
+            <h1 class="login-title">
+              Centro operativo para ventas e inventario
+            </h1>
+            <p class="login-description mb-0">
+              Visualiza el estado del negocio, registra movimientos y consulta
+              informacion clave desde una sola interfaz.
+            </p>
+          </div>
+          <div class="login-highlights" aria-label="Resumen del sistema">
+            <article class="login-highlight">
+              <span class="login-highlight__icon">
+                <i class="bi bi-box-seam" aria-hidden="true"></i>
+              </span>
+              <div>
+                <strong>Inventario activo</strong>
+                <p class="mb-0">Stock, precios y alertas en tiempo real.</p>
+              </div>
+            </article>
+            <article class="login-highlight">
+              <span class="login-highlight__icon">
+                <i class="bi bi-cart-check" aria-hidden="true"></i>
+              </span>
+              <div>
+                <strong>Ventas trazables</strong>
+                <p class="mb-0">Registro claro y seguimiento por detalle.</p>
+              </div>
+            </article>
+            <article class="login-highlight">
+              <span class="login-highlight__icon">
+                <i class="bi bi-graph-up-arrow" aria-hidden="true"></i>
+              </span>
+              <div>
+                <strong>Analitica util</strong>
+                <p class="mb-0">Reportes y apoyo inteligente para decidir.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="login-card__panel">
+          <div class="login-panel__header">
+            <p class="login-panel__eyebrow mb-2">Bienvenido</p>
+            <h2 class="login-panel__title mb-2">Inicia sesion</h2>
+            <p class="login-panel__subtitle mb-0">
+              Ingresa con tus credenciales para continuar.
+            </p>
+          </div>
+          <form id="loginForm" class="mb-3">
+            <div class="mb-3">
+              <label for="username" class="form-label">Usuario</label>
+              <input
+                id="username"
+                class="form-control"
+                autocomplete="username"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <div class="input-group">
+                <input
+                  id="password"
+                  type="password"
+                  class="form-control"
+                  autocomplete="current-password"
+                  required
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="togglePassword"
+                  aria-label="Mostrar contraseña"
+                >
+                  <i class="bi bi-eye" id="togglePasswordIcon"></i>
+                </button>
+              </div>
+            </div>
+            <button class="btn btn-primary w-100" type="submit">
+              <i class="bi bi-arrow-right-circle me-2" aria-hidden="true"></i>
+              Iniciar sesión
+            </button>
+          </form>
+          <div
+            id="loginError"
+            class="alert alert-danger d-none"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></div>
+          <p class="text-muted small mb-0">
+            Si olvidaste tus credenciales, consulta al administrador del
+            sistema.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="appShell" class="app-shell d-none">
+      <aside class="sidebar" id="sidebarPanel">
+        <div class="brand">
+          <button
+            id="menuCloseBtn"
+            class="sidebar-close-btn"
+            type="button"
+            aria-label="Cerrar menu"
+          >
+            <i class="bi bi-x-lg"></i>
+          </button>
+          <p class="h4 mb-0">
+            <i class="bi bi-stars me-2"></i>La Septima Estrella
+          </p>
+          <span class="text-white-50">Dashboard operativo</span>
+        </div>
+        <nav class="nav flex-column" aria-label="Menu principal">
+          <a class="nav-link active" href="#" data-page="dashboard"
+            ><i class="bi bi-grid-1x2-fill nav-icon"></i
+            ><span>Dashboard</span></a
+          >
+          <a
+            class="nav-link permission-gated"
+            href="#"
+            data-page="sales"
+            data-permission="sales_view"
+            ><i class="bi bi-cart-check nav-icon"></i
+            ><span>Registrar venta</span></a
+          >
+          <a
+            class="nav-link permission-gated"
+            href="#"
+            data-page="products"
+            data-permission="products_view"
+            ><i class="bi bi-box-seam nav-icon"></i><span>Productos</span></a
+          >
+          <a
+            class="nav-link permission-gated"
+            href="#"
+            data-page="reports"
+            data-permission="reports_view"
+            ><i class="bi bi-receipt-cutoff nav-icon"></i
+            ><span>Reportes</span></a
+          >
+          <a
+            class="nav-link permission-gated"
+            href="#"
+            data-page="statistics"
+            data-permission="statistics_view"
+            ><i class="bi bi-bar-chart-line-fill nav-icon"></i
+            ><span>Estadisticas</span></a
+          >
+          <a class="nav-link" href="#" data-page="account"
+            ><i class="bi bi-person-circle nav-icon"></i
+            ><span>Mi perfil</span></a
+          >
+          <a
+            class="nav-link permission-gated"
+            href="#"
+            data-page="users"
+            data-permission="users_manage"
+            ><i class="bi bi-people-fill nav-icon"></i><span>Usuarios</span></a
+          >
+          <a
+            class="nav-link permission-gated"
+            href="#"
+            data-page="audit"
+            data-permission="audit_view"
+            ><i class="bi bi-shield-check nav-icon"></i
+            ><span>Auditoria</span></a
+          >
+          <a
+            class="nav-link permission-gated"
+            href="#"
+            data-page="backups"
+            data-permission="backups_manage"
+            ><i class="bi bi-database-fill-check nav-icon"></i
+            ><span>Respaldos</span></a
+          >
+        </nav>
+      </aside>
+      <button
+        id="mobileSidebarOverlay"
+        class="sidebar-overlay"
+        type="button"
+        aria-label="Cerrar menu"
+      ></button>
+
+      <main id="mainContent" class="page-wrapper" role="main" tabindex="-1">
+        <div
+          id="sessionWarningBanner"
+          class="alert alert-warning d-flex justify-content-between align-items-center gap-3"
+          role="alert"
+          aria-live="assertive"
+        >
+          <div>
+            <strong>Sesión por expirar:</strong>
+            <span id="sessionWarningText">--</span>
+          </div>
+          <div class="d-flex gap-2 flex-wrap">
+            <button class="btn btn-sm btn-primary" id="sessionKeepAliveBtn">
+              Mantener sesión
+            </button>
+            <button
+              class="btn btn-sm btn-outline-secondary"
+              id="sessionDismissBtn"
+            >
+              Cerrar aviso
+            </button>
+          </div>
+        </div>
+        <div
+          id="offlineBanner"
+          class="alert alert-info d-flex justify-content-between align-items-center gap-3 d-none"
+          role="status"
+          aria-live="polite"
+        >
+          <div>
+            <strong>Modo resiliente:</strong>
+            <span id="offlineBannerText">Usando respaldo local.</span>
+          </div>
+          <button
+            class="btn btn-sm btn-outline-secondary"
+            id="offlineBannerDismiss"
+          >
+            Ocultar
+          </button>
+        </div>
+
+        <div class="topbar">
+          <div
+            class="topbar-row d-flex align-items-center justify-content-between flex-wrap gap-3"
+          >
+            <div
+              class="d-flex align-items-start gap-2 flex-grow-1 topbar-greeting-wrap"
+            >
+              <button
+                id="menuToggleBtn"
+                class="btn btn-outline-primary btn-sm mobile-menu-toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+              >
+                <i class="bi bi-list"></i>
+              </button>
+              <div class="topbar-greeting">
+                <h1 class="fw-semibold h4 mb-1">
+                  Hola, <span id="topbarGreetingName">Usuario</span>
+                </h1>
+                <p class="mb-0 text-muted">Resumen operativo del día</p>
+              </div>
+            </div>
+            <div
+              class="d-flex align-items-center gap-3 flex-wrap topbar-actions"
+            >
+              <span id="topbarDateLabel" class="topbar-date-label text-muted"
+                >--</span
+              >
+              <span id="userRoleLabel" class="role-badge">SIN ROL</span>
+              <span id="userName" class="fw-semibold">Usuario</span>
+              <button id="logoutBtn" class="btn btn-outline-danger btn-sm">
+                Cerrar sesión
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <section
+          id="dashboardPage"
+          class="page-content active"
+          aria-label="Dashboard"
+        >
+          <h2 class="visually-hidden">Panel principal</h2>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6 col-xl">
+              <div class="metric-card bg-white">
+                <p class="metric-label">Ventas hoy</p>
+                <p id="salesToday" class="metric-value">$0</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl">
+              <div class="metric-card bg-white">
+                <p class="metric-label">Stock bajo</p>
+                <p id="lowStockTotal" class="metric-value">0</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl">
+              <div class="metric-card bg-white">
+                <p class="metric-label">Stock crítico</p>
+                <p id="criticalStockTotal" class="metric-value">0</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl">
+              <div class="metric-card bg-white">
+                <p class="metric-label">Total productos</p>
+                <p id="totalProducts" class="metric-value">0</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl">
+              <div class="metric-card bg-white">
+                <p class="metric-label">Sin imagen</p>
+                <p id="missingImagesTotal" class="metric-value">0</p>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="col-xl-7">
+              <div class="dashboard-list-card bg-white">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h3 class="h5 mb-0">
+                    Productos más vendidos (últimos 7 días)
+                  </h3>
+                  <small class="text-muted">Actualizado al último corte</small>
+                </div>
+                <div id="popularProducts" class="dashboard-list"></div>
+              </div>
+            </div>
+            <div class="col-xl-5">
+              <div class="dashboard-list-card bg-white">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h3 class="h5 mb-0">Alertas de stock bajo</h3>
+                  <small class="text-muted"
+                    >Incluye bajo mínimo y cerca del mínimo</small
+                  >
+                </div>
+                <div id="lowStockAlerts" class="dashboard-list"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-lg-6">
+              <div class="payment-card">
+                <div
+                  class="d-flex justify-content-between align-items-start mb-3"
+                >
+                  <div>
+                    <h3 class="h5 mb-1">Metodos de pago</h3>
+                    <div id="paymentMethodsSummary" class="text-muted small">
+                      Sin datos
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-2 align-items-end mb-3">
+                  <div class="col-sm-6">
+                    <label class="form-label form-label-sm" for="paymentDateFrom"
+                      >Desde</label
+                    >
+                    <input
+                      type="date"
+                      id="paymentDateFrom"
+                      class="form-control form-control-sm"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label form-label-sm" for="paymentDateTo"
+                      >Hasta</label
+                    >
+                    <input
+                      type="date"
+                      id="paymentDateTo"
+                      class="form-control form-control-sm"
+                    />
+                  </div>
+                  <div class="col-sm-6">
+                    <button
+                      id="refreshPaymentMethodsBtn"
+                      class="btn btn-outline-primary btn-sm w-100"
+                    >
+                      Aplicar filtro
+                    </button>
+                  </div>
+                  <div class="col-sm-6">
+                    <button
+                      id="resetPaymentMethodsBtn"
+                      class="btn btn-outline-secondary btn-sm w-100"
+                    >
+                      Restablecer
+                    </button>
+                  </div>
+                </div>
+                <div id="paymentMethodsList"></div>
+              </div>
+            </div>
+            <div class="col-lg-6 permission-gated" data-permission="ai_chat">
+              <div class="ai-chat">
+                <div class="ai-chat-header mb-3">
+                  <div class="ai-chat-title-wrap">
+                    <span class="ai-chat-icon" aria-hidden="true"
+                      ><i class="bi bi-stars"></i
+                    ></span>
+                    <div>
+                      <h3 class="h5 mb-0">Asistente IA</h3>
+                      <small class="text-muted"
+                        >Consultas operativas en lenguaje natural</small
+                      >
+                    </div>
+                  </div>
+                  <span class="ai-chat-chip"
+                    >Contexto: Inventario + Ventas</span
+                  >
+                </div>
+                <div
+                  id="postSaleRecommendations"
+                  class="alert alert-info d-none mb-3"
+                >
+                  <div class="fw-semibold mb-1">
+                    Recomendaciones posteriores a la venta
+                  </div>
+                  <div id="postSaleRecommendationsContent" class="small"></div>
+                </div>
+                <div
+                  id="aiChatConversation"
+                  class="ai-chat-conversation"
+                  role="log"
+                  aria-live="polite"
+                  aria-relevant="additions"
+                ></div>
+                <div class="mb-2">
+                  <label for="aiChatQuestion" class="form-label"
+                    >Pregunta algo sobre tus ventas</label
+                  >
+                  <textarea
+                    id="aiChatQuestion"
+                    class="form-control"
+                    rows="3"
+                    placeholder="Ejemplo: Que producto debo reabastecer primero?"
+                  ></textarea>
+                </div>
+                <div
+                  class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-2"
+                >
+                  <div
+                    id="aiChatStatus"
+                    class="text-muted small"
+                    role="status"
+                    aria-live="polite"
+                    aria-atomic="true"
+                  >
+                    Tip: usa Ctrl+Enter para enviar.
+                  </div>
+                  <button id="aiChatSendBtn" class="btn btn-primary">
+                    Consultar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="salesPage"
+          class="page-content permission-gated"
+          data-permission="sales_view"
+          aria-label="Registrar venta"
+        >
+          <div class="module-header mb-3">
+            <div>
+              <h2 class="mb-1 module-title">Registrar venta</h2>
+              <p class="module-subtitle mb-0">
+                Registra transacciones con IVA por producto y control de stock
+                en tiempo real.
+              </p>
+            </div>
+          </div>
+          <div
+            id="saleMessage"
+            class="alert d-none"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          ></div>
+          <div class="row g-3">
+            <div class="col-lg-8">
+              <div class="card border-0 shadow-sm p-3 h-100">
+                <div class="mb-3">
+                  <label class="form-label" for="productSearch"
+                    >Buscar producto</label
+                  >
+                  <input
+                    id="productSearch"
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre o categoria"
+                  />
+                </div>
+                <div id="searchResults" class="sale-results-list"></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card border-0 shadow-sm p-3 sale-summary-card">
+                <div>
+                  <h3 class="h6 text-muted">Resumen</h3>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3"
+                  >
+                    <span class="text-muted">Subtotal (sin IVA)</span>
+                    <span id="saleSubtotal" class="fw-semibold">$0</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-2"
+                  >
+                    <span class="text-muted"
+                      >IVA (<span id="saleIvaRate">Variable</span>)</span
+                    >
+                    <span id="saleIva" class="fw-semibold">$0</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center my-3"
+                  >
+                    <span class="text-muted">Total (con IVA)</span>
+                    <span id="saleTotal" class="fs-4 fw-semibold">$0</span>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="paymentMethod"
+                      >Metodo de pago</label
+                    >
+                    <select id="paymentMethod" class="form-select">
+                      <option value="efectivo">Efectivo</option>
+                      <option value="nequi">Nequi</option>
+                      <option value="daviplata">Daviplata</option>
+                      <option value="transferencia">Transferencia</option>
+                    </select>
+                  </div>
+                  <button
+                    id="completeSaleBtn"
+                    class="btn btn-success w-100 mb-3 permission-gated"
+                    data-permission="sales_create"
+                    disabled
+                  >
+                    Completar venta
+                  </button>
+                </div>
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h3 class="h6 mb-0">Productos seleccionados</h3>
+                  <button
+                    class="btn btn-outline-secondary btn-sm"
+                    id="resetSaleBtn"
+                  >
+                    Limpiar
+                  </button>
+                </div>
+                <div id="saleItems" class="sale-items-list"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow-sm p-3 mt-4">
+            <div
+              class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3"
+            >
+              <div>
+                <h3 class="h6 mb-1">Ventas recientes</h3>
+                <p id="recentSalesMessage" class="text-muted small mb-0">
+                  Aqui puedes revisar ventas recientes y deshabilitar solo las
+                  que fueron habilitadas por gerente o admin.
+                </p>
+              </div>
+              <button
+                id="refreshRecentSalesBtn"
+                type="button"
+                class="btn btn-outline-secondary btn-sm"
+              >
+                Actualizar
+              </button>
+            </div>
+            <div class="table-responsive">
+              <table
+                class="table table-hover align-middle mb-0 table-stackable"
+                aria-busy="false"
+              >
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Fecha</th>
+                    <th>Vendedor</th>
+                    <th>Metodo</th>
+                    <th>Total</th>
+                    <th>Estado</th>
+                    <th class="text-end">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody
+                  id="recentSalesTable"
+                  data-labels="ID|Fecha|Vendedor|Metodo|Total|Estado|Acciones"
+                ></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="productsPage"
+          class="page-content permission-gated"
+          data-permission="products_view"
+          aria-label="Productos"
+        >
+          <div
+            class="module-header d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2"
+          >
+            <div>
+              <h2 class="mb-1 module-title">Gestión de productos</h2>
+              <p class="module-subtitle mb-0">
+                Administra catálogo, IVA, estado activo e inventario mínimo por
+                producto.
+              </p>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+              <button
+                id="exportProductsPdfBtn"
+                class="btn btn-outline-danger permission-gated"
+                data-permission="products_view"
+              >
+                Exportar PDF
+              </button>
+              <button
+                id="exportProductsExcelBtn"
+                class="btn btn-outline-success permission-gated"
+                data-permission="products_view"
+              >
+                Exportar Excel
+              </button>
+              <input
+                id="productImportInput"
+                type="file"
+                class="d-none"
+                accept=".csv,.xlsx,.xls"
+              />
+              <button
+                id="importProductsBtn"
+                class="btn btn-outline-primary permission-gated"
+                data-permission="products_manage"
+              >
+                Importar inventario
+              </button>
+              <button
+                id="addProductBtn"
+                class="btn btn-primary permission-gated"
+                data-permission="products_manage"
+              >
+                Nuevo producto
+              </button>
+            </div>
+          </div>
+          <div class="card border-0 shadow-sm p-3">
+            <div class="row g-2 mb-3 module-filters">
+              <div class="col-md-6 col-lg-4">
+                <label class="form-label">Buscar</label>
+                <div class="input-group">
+                  <input
+                    id="productFilter"
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre o categoria"
+                  />
+                  <button
+                    id="filterProductBtn"
+                    class="btn btn-outline-secondary"
+                    type="button"
+                  >
+                    Buscar
+                  </button>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-lg-4 permission-gated"
+                data-permission="products_manage"
+              >
+                <label class="form-label" for="ivaPercentInput"
+                  >IVA del sistema (%)</label
+                >
+                <div class="input-group">
+                  <input
+                    id="ivaPercentInput"
+                    type="number"
+                    class="form-control"
+                    min="0"
+                    max="100"
+                    step="0.01"
+                    value="19"
+                  />
+                  <button
+                    id="saveIvaBtn"
+                    class="btn btn-outline-primary"
+                    type="button"
+                  >
+                    Actualizar IVA
+                  </button>
+                </div>
+                <small id="ivaConfigMessage" class="text-muted"
+                  >Aplica para precios y nuevas ventas.</small
+                >
+              </div>
+            </div>
+            <div
+              id="productImportMessage"
+              class="small text-muted mb-3"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              Importa un archivo CSV o Excel para crear o actualizar productos
+              en lote.
+            </div>
+            <div class="table-responsive">
+              <table
+                class="table table-hover align-middle mb-0 table-stackable"
+                aria-busy="false"
+              >
+                <thead>
+                  <tr>
+                    <th>Producto</th>
+                    <th>Categoria</th>
+                    <th>Precio + IVA</th>
+                    <th>Stock</th>
+                    <th>Minimo</th>
+                    <th
+                      class="permission-gated text-end"
+                      data-permission="products_manage"
+                    >
+                      Acciones
+                    </th>
+                  </tr>
+                </thead>
+                <tbody
+                  id="productsTable"
+                  data-labels="Producto|Categoria|Precio e IVA|Stock|Estado|Acciones"
+                ></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="auditPage"
+          class="page-content permission-gated"
+          data-permission="audit_view"
+          aria-label="Auditoria"
+        >
+          <div class="module-header mb-3">
+            <div>
+              <h2 class="mb-1 module-title">Auditoría de usuarios</h2>
+              <p class="module-subtitle mb-0">
+                Trazabilidad de cambios, ventas y operaciones críticas por
+                usuario y fecha.
+              </p>
+            </div>
+          </div>
+          <div class="card border-0 shadow-sm p-3">
+            <div class="row g-2 align-items-end mb-3 module-filters">
+              <div class="col-md-3">
+                <label class="form-label" for="auditDateFrom">Desde</label>
+                <input id="auditDateFrom" type="date" class="form-control" />
+              </div>
+              <div class="col-md-3">
+                <label class="form-label" for="auditDateTo">Hasta</label>
+                <input id="auditDateTo" type="date" class="form-control" />
+              </div>
+              <div class="col-md-3">
+                <label class="form-label" for="auditActionFilter">Evento</label>
+                <select id="auditActionFilter" class="form-select">
+                  <option value="">Todos</option>
+                  <option value="producto_creado">Producto creado</option>
+                  <option value="producto_actualizado">
+                    Producto actualizado
+                  </option>
+                  <option value="producto_estado_actualizado">
+                    Estado producto
+                  </option>
+                  <option value="producto_eliminado">
+                    Producto eliminado (legacy)
+                  </option>
+                  <option value="precio_actualizado">Precio actualizado</option>
+                  <option value="venta_registrada">Venta registrada</option>
+                  <option value="stock_ajustado">Stock ajustado</option>
+                  <option value="minimo_stock_actualizado">
+                    Minimo actualizado
+                  </option>
+                  <option value="login_exitoso">Login exitoso</option>
+                  <option value="login_fallido">Login fallido</option>
+                  <option value="logout">Logout</option>
+                  <option value="inventario_movimiento">
+                    Movimiento inventario
+                  </option>
+                  <option value="inventario_importado">
+                    Inventario importado
+                  </option>
+                  <option value="configuracion_iva_actualizada">
+                    IVA global actualizado
+                  </option>
+                  <option value="usuario_creado">Usuario creado</option>
+                  <option value="usuario_actualizado">
+                    Usuario actualizado
+                  </option>
+                  <option value="usuario_estado_actualizado">
+                    Estado usuario
+                  </option>
+                  <option value="usuario_eliminado">Usuario eliminado</option>
+                  <option value="rol_creado">Rol creado</option>
+                  <option value="respaldo_generado">Respaldo generado</option>
+                  <option value="respaldo_restaurado">Respaldo restaurado</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label" for="auditUserFilter">Usuario</label>
+                <input
+                  id="auditUserFilter"
+                  class="form-control"
+                  placeholder="admin"
+                />
+              </div>
+              <div class="col-md-12 d-flex gap-2">
+                <button id="filterAuditBtn" class="btn btn-outline-primary">
+                  Filtrar
+                </button>
+                <button id="refreshAuditBtn" class="btn btn-outline-secondary">
+                  Actualizar
+                </button>
+                <button id="auditExportPdfBtn" class="btn btn-outline-danger">
+                  Exportar PDF
+                </button>
+                <button
+                  id="auditExportExcelBtn"
+                  class="btn btn-outline-success"
+                >
+                  Exportar Excel
+                </button>
+              </div>
+            </div>
+            <div
+              id="auditSummary"
+              class="small text-muted mb-2"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            >
+              Sin datos
+            </div>
+            <div class="table-responsive">
+              <table
+                class="table table-striped align-middle mb-0 table-stackable"
+                aria-busy="false"
+              >
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Fecha</th>
+                    <th>Evento</th>
+                    <th>Detalle</th>
+                    <th>Entidad</th>
+                    <th>Usuario</th>
+                  </tr>
+                </thead>
+                <tbody
+                  id="auditTable"
+                  data-labels="ID|Fecha|Evento|Detalle|Entidad|Usuario"
+                ></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="reportsPage"
+          class="page-content permission-gated"
+          data-permission="reports_view"
+          aria-label="Reportes"
+        >
+          <div class="module-header mb-3">
+            <div>
+              <h2 class="mb-1 module-title">Reportes de ventas</h2>
+              <p class="module-subtitle mb-0">
+                Consulta ventas por rango de fechas y exporta resultados para
+                sustentación.
+              </p>
+            </div>
+          </div>
+          <div class="card border-0 shadow-sm p-3">
+            <div class="row g-3 align-items-end mb-3 module-filters">
+              <div class="col-md-4">
+                <label class="form-label">Desde</label>
+                <input type="date" id="reportDateFrom" class="form-control" />
+              </div>
+              <div class="col-md-4">
+                <label class="form-label">Hasta</label>
+                <input type="date" id="reportDateTo" class="form-control" />
+              </div>
+              <div class="col-md-4 col-lg-2">
+                <button id="generateReportBtn" class="btn btn-primary w-100">
+                  Generar
+                </button>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <button
+                  id="reportExportPdfBtn"
+                  class="btn btn-outline-danger w-100"
+                >
+                  Exportar PDF
+                </button>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <button
+                  id="reportExportExcelBtn"
+                  class="btn btn-outline-success w-100"
+                >
+                  Exportar Excel
+                </button>
+              </div>
+            </div>
+            <div
+              id="reportSummary"
+              class="mb-3"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></div>
+            <div class="table-responsive">
+              <table
+                class="table table-striped align-middle table-stackable"
+                aria-busy="false"
+              >
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Fecha</th>
+                    <th>Usuario</th>
+                    <th>Metodo de pago</th>
+                    <th>Total</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody
+                  id="salesReportTable"
+                  data-labels="ID|Fecha|Usuario|Metodo de pago|Total|Estado|Acciones"
+                ></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="statisticsPage"
+          class="page-content permission-gated"
+          data-permission="statistics_view"
+          aria-label="Estadísticas"
+        >
+          <div class="module-header mb-3">
+            <div>
+              <h2 class="mb-1 module-title">Estadísticas de productos</h2>
+              <p class="module-subtitle mb-0">
+                Analiza tendencias de ventas, top productos e inteligencia de
+                reposición.
+              </p>
+            </div>
+          </div>
+          <div class="card border-0 shadow-sm p-3">
+            <div class="row g-3 align-items-end mb-3 module-filters">
+              <div class="col-md-4 col-lg-3">
+                <label class="form-label" for="statsDateFrom">Desde</label>
+                <input type="date" id="statsDateFrom" class="form-control" />
+              </div>
+              <div class="col-md-4 col-lg-3">
+                <label class="form-label" for="statsDateTo">Hasta</label>
+                <input type="date" id="statsDateTo" class="form-control" />
+              </div>
+              <div class="col-md-3 col-lg-2">
+                <button id="generateStatsBtn" class="btn btn-primary w-100">
+                  Generar
+                </button>
+              </div>
+              <div class="col-md-3 col-lg-2">
+                <button
+                  id="statsExportPdfBtn"
+                  class="btn btn-outline-danger w-100"
+                >
+                  Exportar PDF
+                </button>
+              </div>
+              <div class="col-md-3 col-lg-2">
+                <button
+                  id="statsExportExcelBtn"
+                  class="btn btn-outline-success w-100"
+                >
+                  Exportar Excel
+                </button>
+              </div>
+            </div>
+            <div class="row g-3 mb-3 d-none" id="statisticsSummaryRow">
+              <div class="col-sm-6 col-lg-3">
+                <div class="stats-summary-card">
+                  <span class="stats-summary-label">Total vendido</span>
+                  <span id="statsSummaryRevenue" class="stats-summary-value"
+                    >$0</span
+                  >
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="stats-summary-card">
+                  <span class="stats-summary-label">Unidades vendidas</span>
+                  <span id="statsSummaryUnits" class="stats-summary-value"
+                    >0</span
+                  >
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="stats-summary-card">
+                  <span class="stats-summary-label">Producto destacado</span>
+                  <span
+                    id="statsSummaryTopProduct"
+                    class="stats-summary-value text-truncate"
+                    title="--"
+                    >--</span
+                  >
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="stats-summary-card">
+                  <span class="stats-summary-label">Mayor ingreso</span>
+                  <span
+                    id="statsSummaryTopRevenue"
+                    class="stats-summary-value text-truncate"
+                    title="--"
+                    >--</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div id="statisticsNote" class="text-muted small mb-3 d-none"></div>
+            <div class="row g-4 align-items-start statistics-grid">
+              <div class="col-xl-7">
+                <div class="card border-0 shadow-sm p-3">
+                  <h3 class="h6 text-center mb-3">
+                    Top productos por unidades
+                  </h3>
+                  <div class="table-responsive" style="max-height: 300px">
+                    <table
+                      class="table table-sm align-middle mb-0 table-stackable"
+                      aria-busy="false"
+                    >
+                      <thead>
+                        <tr>
+                          <th>Producto</th>
+                          <th class="text-end">Unidades</th>
+                        </tr>
+                      </thead>
+                      <tbody
+                        id="statsUnitsTable"
+                        data-labels="Producto|Unidades"
+                      ></tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5">
+                <div class="card border-0 shadow-sm p-3 statistics-chart-card">
+                  <div class="stats-revenue-head">
+                    <h3 class="h6 mb-1">Ingresos por producto</h3>
+                    <div id="statsChartHint" class="small stats-chart-hint">
+                      Selecciona un segmento o una fila para ver el detalle.
+                    </div>
+                  </div>
+                  <div
+                    id="statsChartFocus"
+                    class="stats-chart-focus d-none"
+                    aria-live="polite"
+                  ></div>
+                  <div class="stats-revenue-layout">
+                    <div class="pie-wrapper">
+                      <canvas id="categoriesPieChart" height="180"></canvas>
+                    </div>
+                    <div
+                      id="statsLegend"
+                      class="small text-muted stats-legend-list d-none"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card border-0 shadow-sm p-3 mt-4 forecast-card"
+              aria-label="Pronostico de demanda IA"
+            >
+              <div class="forecast-hero mb-3">
+                <div
+                  class="d-flex flex-wrap justify-content-between align-items-end gap-2"
+                >
+                  <div>
+                    <h3 class="h6 mb-1">Pronostico de demanda (IA)</h3>
+                    <div id="forecastModelSummary" class="small text-muted">
+                      Sin datos del modelo.
+                    </div>
+                  </div>
+                  <div
+                    class="d-flex align-items-end gap-2 forecast-hero-actions"
+                  >
+                    <div>
+                      <label class="form-label mb-1" for="forecastHorizonDays"
+                        >Horizonte (dias)</label
+                      >
+                      <input
+                        id="forecastHorizonDays"
+                        type="number"
+                        min="3"
+                        max="90"
+                        value="14"
+                        class="form-control form-control-sm"
+                        style="width: 120px"
+                      />
+                    </div>
+                    <button
+                      id="refreshForecastBtn"
+                      class="btn btn-outline-primary btn-sm"
+                    >
+                      Actualizar pronostico
+                    </button>
+                  </div>
+                </div>
+                <div
+                  id="forecastModelBadges"
+                  class="forecast-model-badges mt-2"
+                ></div>
+              </div>
+
+              <div class="row g-2 mb-3">
+                <div class="col-6 col-lg-3">
+                  <div class="forecast-kpi-card">
+                    <span class="forecast-kpi-label">Productos</span>
+                    <span id="forecastKpiProducts" class="forecast-kpi-value"
+                      >0</span
+                    >
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="forecast-kpi-card">
+                    <span class="forecast-kpi-label">Reponer Ahora</span>
+                    <span id="forecastKpiActionable" class="forecast-kpi-value"
+                      >0</span
+                    >
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="forecast-kpi-card">
+                    <span class="forecast-kpi-label">Riesgo Critico</span>
+                    <span id="forecastKpiCritical" class="forecast-kpi-value"
+                      >0</span
+                    >
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div class="forecast-kpi-card">
+                    <span class="forecast-kpi-label">Cobertura Prom.</span>
+                    <span id="forecastKpiCoverage" class="forecast-kpi-value"
+                      >N/D</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-2"
+              >
+                <div id="forecastPeriodInfo" class="small text-muted mb-0">
+                  Periodo: sin calcular.
+                </div>
+                <div id="forecastResultCount" class="forecast-result-count">
+                  0 resultados
+                </div>
+              </div>
+
+              <div
+                id="forecastSummary"
+                class="forecast-chips mb-3"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+              >
+                Sin datos
+              </div>
+
+              <div
+                class="forecast-quick-filters mb-3"
+                role="group"
+                aria-label="Filtros rapidos de riesgo"
+              >
+                <button
+                  id="forecastQuickAll"
+                  type="button"
+                  class="forecast-quick-btn active"
+                  data-risk="all"
+                  aria-pressed="true"
+                >
+                  Todos
+                </button>
+                <button
+                  id="forecastQuickCritical"
+                  type="button"
+                  class="forecast-quick-btn"
+                  data-risk="critico"
+                  aria-pressed="false"
+                >
+                  Solo críticos
+                </button>
+                <button
+                  id="forecastQuickWarning"
+                  type="button"
+                  class="forecast-quick-btn"
+                  data-risk="alerta"
+                  aria-pressed="false"
+                >
+                  Solo alerta
+                </button>
+              </div>
+
+              <div class="row g-2 mb-3 forecast-toolbar">
+                <div class="col-md-5">
+                  <label class="form-label mb-1" for="forecastSearchInput"
+                    >Buscar producto</label
+                  >
+                  <input
+                    id="forecastSearchInput"
+                    type="text"
+                    class="form-control form-control-sm"
+                    placeholder="Ej: gaseosa, arroz, huevos"
+                  />
+                </div>
+                <div class="col-md-3">
+                  <label class="form-label mb-1" for="forecastRiskFilter"
+                    >Riesgo</label
+                  >
+                  <select
+                    id="forecastRiskFilter"
+                    class="form-select form-select-sm"
+                  >
+                    <option value="all">Todos</option>
+                    <option value="critico">Crítico</option>
+                    <option value="alerta">Alerta</option>
+                    <option value="estable">Estable</option>
+                    <option value="sin_dato">Sin dato</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label mb-1" for="forecastSortBy"
+                    >Ordenar por</label
+                  >
+                  <select
+                    id="forecastSortBy"
+                    class="form-select form-select-sm"
+                  >
+                    <option value="risk_purchase">
+                      Riesgo + compra sugerida
+                    </option>
+                    <option value="purchase_desc">
+                      Compra sugerida (mayor)
+                    </option>
+                    <option value="cover_asc">Cobertura (menor)</option>
+                    <option value="product_asc">Producto (A-Z)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="table-responsive forecast-table-wrap">
+                <table
+                  class="table table-sm align-middle mb-0 table-stackable"
+                  aria-busy="false"
+                >
+                  <thead>
+                    <tr>
+                      <th>Producto</th>
+                      <th class="text-end">Pronostico</th>
+                      <th>Cobertura</th>
+                      <th>Riesgo</th>
+                      <th class="text-end">Compra sugerida</th>
+                    </tr>
+                  </thead>
+                  <tbody
+                    id="forecastTable"
+                    data-labels="Producto|Pronostico|Cobertura|Riesgo|Compra sugerida"
+                  ></tbody>
+                </table>
+              </div>
+            </div>
+            <div id="statisticsEmpty" class="alert alert-info d-none mt-4">
+              No hay datos suficientes para el periodo seleccionado.
+            </div>
+          </div>
+        </section>
+        <section
+          id="usersPage"
+          class="page-content permission-gated"
+          data-permission="users_manage"
+          aria-label="Usuarios"
+        >
+          <div
+            class="module-header d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2"
+          >
+            <div>
+              <h2 class="mb-1 module-title">Usuarios del sistema</h2>
+              <p class="module-subtitle mb-0">
+                Gestiona acceso, roles y permisos sin eliminar trazabilidad
+                histórica.
+              </p>
+            </div>
+            <button
+              id="addUserBtn"
+              class="btn btn-primary permission-gated"
+              data-permission="users_manage"
+            >
+              Nuevo usuario
+            </button>
+          </div>
+          <div class="card border-0 shadow-sm p-3">
+            <div class="table-responsive">
+              <table
+                class="table table-hover align-middle mb-0 table-stackable"
+                aria-busy="false"
+              >
+                <thead>
+                  <tr>
+                    <th>Usuario</th>
+                    <th>Nombre</th>
+                    <th>Rol</th>
+                    <th>Estado</th>
+                    <th class="text-end">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody
+                  id="usersTable"
+                  data-labels="Usuario|Nombre|Rol|Estado|Acciones"
+                ></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section id="accountPage" class="page-content" aria-label="Perfil">
+          <div class="module-header mb-3">
+            <div>
+              <h2 class="mb-1 module-title">Mi perfil</h2>
+              <p class="module-subtitle mb-0">
+                Consulta datos de sesión, capacidades del rol y estado de acceso
+                actual.
+              </p>
+            </div>
+          </div>
+          <div class="row g-3">
+            <div class="col-lg-6">
+              <div class="card border-0 shadow-sm p-3">
+                <h3 class="h6 text-muted">Datos personales</h3>
+                <div id="userProfileInfo" class="mt-3"></div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card border-0 shadow-sm p-3 mb-3">
+                <h3 class="h6 text-muted">Rol</h3>
+                <p id="userRoleSummary" class="mt-2 mb-0 text-muted"></p>
+                <ul
+                  id="userRoleCapabilities"
+                  class="mt-3 mb-0 list-unstyled"
+                ></ul>
+              </div>
+              <div class="card border-0 shadow-sm p-3">
+                <h3 class="h6 text-muted">Sesión</h3>
+                <div id="userSessionInfo" class="mt-2"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="backupsPage"
+          class="page-content permission-gated"
+          data-permission="backups_manage"
+          aria-label="Respaldos"
+        >
+          <div class="module-header mb-3">
+            <div>
+              <h2 class="mb-1 module-title">Respaldos del sistema</h2>
+              <p class="module-subtitle mb-0">
+                Genera snapshots de seguridad para continuidad operativa y
+                soporte de auditoría.
+              </p>
+            </div>
+          </div>
+          <div class="card border-0 shadow-sm p-3">
+            <div
+              class="d-flex flex-wrap justify-content-between align-items-center gap-2"
+            >
+              <div>
+                <h3 class="h6 mb-1">Generar respaldo manual</h3>
+                <small class="text-muted"
+                  >Crea un snapshot actual en JSON y PDF para auditoría o
+                  entrega.</small
+                >
+              </div>
+              <button
+                id="generateBackupBtn"
+                class="btn btn-outline-primary btn-sm"
+              >
+                Generar respaldo
+              </button>
+            </div>
+            <div
+              id="backupMessage"
+              class="small text-muted mt-2"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></div>
+            <hr />
+            <div
+              class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-2"
+            >
+              <div>
+                <h3 class="h6 mb-1">Historial de respaldos</h3>
+                <small class="text-muted"
+                  >Descarga JSON/PDF o restaura un snapshot validado.</small
+                >
+              </div>
+              <button
+                id="refreshBackupsBtn"
+                class="btn btn-outline-secondary btn-sm"
+              >
+                Actualizar lista
+              </button>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-sm align-middle mb-0 table-stackable">
+                <thead>
+                  <tr>
+                    <th>Archivo</th>
+                    <th>Fecha</th>
+                    <th>Contenido</th>
+                    <th class="text-end">Acciones</th>
+                  </tr>
+                </thead>
+                <tbody
+                  id="backupsTable"
+                  data-labels="Archivo|Fecha|Contenido|Acciones"
+                >
+                  <tr>
+                    <td colspan="4" class="text-muted text-center">
+                      Sin respaldos cargados.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Producto</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="productFormMessage"
+              class="alert d-none"
+              role="alert"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></div>
+            <form id="productForm">
+              <input type="hidden" id="productId" />
+              <div class="mb-3">
+                <label for="productName" class="form-label">Nombre</label>
+                <input id="productName" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label for="productCategory" class="form-label"
+                  >Categoria</label
+                >
+                <input id="productCategory" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label for="productImageInput" class="form-label"
+                  >Imagen del producto</label
+                >
+                <div class="product-image-uploader">
+                  <img
+                    id="productImagePreview"
+                    class="product-image-preview"
+                    alt="Vista previa de producto"
+                  />
+                  <div class="w-100">
+                    <input
+                      id="productImageInput"
+                      type="file"
+                      class="form-control"
+                      accept="image/png,image/jpeg,image/webp,image/gif,image/svg+xml"
+                    />
+                    <div class="form-text">
+                      Opcional. Si no cargas imagen se mostrará un placeholder.
+                    </div>
+                    <button
+                      id="productImageClearBtn"
+                      type="button"
+                      class="btn btn-outline-secondary btn-sm mt-2"
+                    >
+                      Quitar imagen
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <label for="productPrice" class="form-label"
+                    >Precio base (sin IVA)</label
+                  >
+                  <input
+                    id="productPrice"
+                    type="number"
+                    min="0"
+                    step="0.01"
+                    class="form-control"
+                    required
+                  />
+                  <small id="productIvaHint" class="text-muted"
+                    >IVA vigente: 19%</small
+                  >
+                </div>
+                <div class="col-md-4">
+                  <label for="productIvaPercent" class="form-label"
+                    >IVA (%) del producto</label
+                  >
+                  <input
+                    id="productIvaPercent"
+                    type="number"
+                    min="0"
+                    max="100"
+                    step="0.01"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="productStock" class="form-label">Stock</label>
+                  <input
+                    id="productStock"
+                    type="number"
+                    min="0"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mt-3">
+                <label for="productMinStock" class="form-label"
+                  >Stock minimo</label
+                >
+                <input
+                  id="productMinStock"
+                  type="number"
+                  min="0"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-primary" id="saveProductBtn">
+              Guardar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="minStockModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Ajustar minimo</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="minStockFormMessage"
+              class="alert d-none"
+              role="alert"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></div>
+            <input type="hidden" id="minStockProductId" />
+            <div class="mb-3">
+              <label class="form-label">Producto</label>
+              <input id="minStockProductName" class="form-control" disabled />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="minStockValue">Nuevo minimo</label>
+              <input
+                id="minStockValue"
+                type="number"
+                min="0"
+                class="form-control"
+                required
+              />
+              <div class="form-text">
+                Define cuantas unidades deben quedar antes de lanzar una alerta.
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-primary" id="saveMinStockBtn">
+              Guardar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Usuario</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div
+              id="userFormMessage"
+              class="alert d-none"
+              role="alert"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></div>
+            <form id="userForm">
+              <input type="hidden" id="userId" />
+              <div class="mb-3">
+                <label class="form-label" for="userUsername">Usuario</label>
+                <input id="userUsername" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="userPassword">Contraseña</label>
+                <input
+                  id="userPassword"
+                  type="password"
+                  class="form-control"
+                  placeholder="Minimo 8 caracteres, usa mayuscula, minuscula, numero y simbolo"
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="userNameInput">Nombre</label>
+                <input id="userNameInput" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="userRole">Rol</label>
+                <select id="userRole" class="form-select" required>
+                  <option value="admin">Administrador</option>
+                  <option value="gerente">Gerente</option>
+                  <option value="vendedor">Vendedor</option>
+                  <option value="__new__">+ Crear nuevo rol</option>
+                </select>
+              </div>
+              <div id="userNewRolePanel" class="border rounded p-3 mb-3 d-none">
+                <div class="mb-2">
+                  <label class="form-label" for="userNewRoleName"
+                    >Nombre del nuevo rol</label
+                  >
+                  <input
+                    id="userNewRoleName"
+                    class="form-control"
+                    placeholder="Ejemplo: jefe_bodega"
+                  />
+                  <div class="form-text">
+                    Usa letras, numeros o guion bajo (3 a 32 caracteres).
+                  </div>
+                </div>
+                <div class="small text-muted mb-2">Permisos del rol</div>
+                <div id="userRolePermissionsGrid" class="row g-2">
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permDashboard"
+                        value="dashboard_view"
+                      /><label class="form-check-label" for="permDashboard"
+                        >Ver dashboard</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permSalesView"
+                        value="sales_view"
+                      /><label class="form-check-label" for="permSalesView"
+                        >Ver ventas</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permSalesCreate"
+                        value="sales_create"
+                      /><label class="form-check-label" for="permSalesCreate"
+                        >Registrar ventas</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permProductsView"
+                        value="products_view"
+                      /><label class="form-check-label" for="permProductsView"
+                        >Ver productos</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permProductsManage"
+                        value="products_manage"
+                      /><label class="form-check-label" for="permProductsManage"
+                        >Gestionar productos</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permReports"
+                        value="reports_view"
+                      /><label class="form-check-label" for="permReports"
+                        >Ver reportes</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permStatistics"
+                        value="statistics_view"
+                      /><label class="form-check-label" for="permStatistics"
+                        >Ver estadisticas</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permUsers"
+                        value="users_manage"
+                      /><label class="form-check-label" for="permUsers"
+                        >Gestionar usuarios</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permAudit"
+                        value="audit_view"
+                      /><label class="form-check-label" for="permAudit"
+                        >Ver auditoria</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permSessions"
+                        value="sessions_manage"
+                      /><label class="form-check-label" for="permSessions"
+                        >Gestionar sesiones</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permBackups"
+                        value="backups_manage"
+                      /><label class="form-check-label" for="permBackups"
+                        >Gestionar respaldos</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input role-permission-input"
+                        type="checkbox"
+                        id="permAi"
+                        value="ai_chat"
+                      /><label class="form-check-label" for="permAi"
+                        >Usar asistente IA</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="userActive"
+                  checked
+                />
+                <label class="form-check-label" for="userActive">Activo</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancelar
+            </button>
+            <button type="button" class="btn btn-primary" id="saveUserBtn">
+              Guardar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="saleDetailModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              Detalle de venta #<span id="saleIdHeader"></span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3 mb-3">
+              <div class="col-md-4">
+                <strong>Fecha:</strong> <span id="saleDate"></span>
+              </div>
+              <div class="col-md-4">
+                <strong>Subtotal:</strong> <span id="saleSubtotalDetail"></span>
+              </div>
+              <div class="col-md-4">
+                <strong>IVA:</strong> <span id="saleIvaDetail"></span>
+              </div>
+              <div class="col-md-4">
+                <strong>Total:</strong> <span id="saleTotalDetail"></span>
+              </div>
+              <div class="col-md-4">
+                <strong>Metodo:</strong> <span id="salePaymentMethod"></span>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-sm table-stackable" aria-busy="false">
+                <thead>
+                  <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody
+                  id="saleDetailItems"
+                  data-labels="Producto|Cantidad|Precio|Subtotal"
+                ></tbody>
+              </table>
+            </div>
+            <div id="saleRecommendations" class="mt-3"></div>
+            <div id="saleVoidStatus" class="alert alert-secondary d-none mt-3"></div>
+            <div id="saleVoidControls" class="border-top pt-3 mt-3 d-none">
+              <div id="saleVoidManagerPanel" class="d-none">
+                <label class="form-label" for="saleVoidKey"
+                  >Clave del gerente</label
+                >
+                <div class="input-group">
+                  <input
+                    id="saleVoidKey"
+                    type="password"
+                    class="form-control"
+                    placeholder="Ingresa la clave"
+                    autocomplete="off"
+                  />
+                  <button
+                    id="authorizeSaleVoidBtn"
+                    type="button"
+                    class="btn btn-outline-warning"
+                  >
+                    Habilitar venta
+                  </button>
+                </div>
+                <div class="form-text">
+                  Esto solo habilita esta venta puntual para que un vendedor la
+                  deshabilite.
+                </div>
+              </div>
+              <div id="saleVoidSellerPanel" class="d-none">
+                <button
+                  id="voidSaleBtn"
+                  type="button"
+                  class="btn btn-outline-danger"
+                >
+                  Deshabilitar venta
+                </button>
+              </div>
+              <div id="saleVoidMessage" class="small text-muted mt-2"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"
+    ></script>
+    <script defer src="app.js?v=__ASSET_VERSION__"></script>
+  </body>
+</html>

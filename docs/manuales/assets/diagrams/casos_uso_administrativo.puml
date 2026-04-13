@@ -1,0 +1,45 @@
+@startuml
+left to right direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam usecase {
+  BackgroundColor #eef3ff
+  BorderColor #3157c4
+}
+
+actor "Gerente" as Gerente
+actor "Administrador" as Admin
+actor "Auditor" as Auditor
+
+rectangle "Sistema La Séptima Estrella" {
+  package "Control directivo" {
+    usecase "Consultar reportes y estadísticas" as UC_Reports
+    usecase "Autorizar deshabilitación de venta" as UC_Authorize
+  }
+
+  package "Administración del sistema" {
+    usecase "Gestionar usuarios y roles" as UC_Users
+    usecase "Gestionar respaldos" as UC_Backups
+  }
+
+  package "Trazabilidad y revisión" {
+    usecase "Consultar auditoría" as UC_Audit
+  }
+}
+
+Gerente --> UC_Reports
+Gerente --> UC_Authorize
+
+Admin --> UC_Users
+Admin --> UC_Backups
+Admin --> UC_Audit
+
+Auditor --> UC_Audit
+
+note right of Admin
+El administrador conserva
+control total sobre usuarios,
+respaldos y revisión general.
+end note
+
+@enduml

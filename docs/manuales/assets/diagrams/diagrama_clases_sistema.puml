@@ -1,0 +1,99 @@
+@startuml
+top to bottom direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam classAttributeIconSize 0
+
+class "AplicaciónWeb" as AplicacionWeb {
+  +inicializar()
+  +registrar_rutas()
+  +cargar_configuración()
+}
+
+package "Seguridad y acceso" {
+  class "ServicioAutenticación" as ServicioAutenticacion {
+    +iniciar_sesión()
+    +cerrar_sesión()
+    +validar_permiso()
+  }
+
+  class ServicioSesiones {
+    +crear_token()
+    +renovar_sesión()
+    +revocar_sesión()
+  }
+
+  class "ServicioRoles" as ServicioRoles {
+    +obtener_permisos()
+    +actualizar_rol()
+  }
+}
+
+package "Operación del negocio" {
+  class "ServicioVentas" as ServicioVentas {
+    +registrar_venta()
+    +consultar_detalle()
+    +deshabilitar_venta()
+  }
+
+  class "ServicioProductos" as ServicioProductos {
+    +consultar_stock()
+    +actualizar_precio()
+  }
+
+  class "ServicioReportes" as ServicioReportes {
+    +generar_reporte()
+    +calcular_estadísticas()
+  }
+
+  class "ServicioAuditoría" as ServicioAuditoria {
+    +registrar_evento()
+    +consultar_eventos()
+  }
+
+  class "ServicioRespaldos" as ServicioRespaldos {
+    +generar_respaldo()
+    +restaurar_respaldo()
+  }
+}
+
+package "Analítica y apoyo" {
+  class "MotorIA" as MotorIA {
+    +pronosticar_demanda()
+    +generar_alertas()
+  }
+
+  class "AsistenteChat" as AsistenteChat {
+    +interpretar_consulta()
+    +responder()
+  }
+
+  class "CacheOperativa" as CacheOperativa {
+    +actualizar()
+    +obtener_productos()
+    +obtener_ventas()
+  }
+}
+
+AplicacionWeb ..> ServicioAutenticacion
+AplicacionWeb ..> ServicioVentas
+AplicacionWeb ..> ServicioReportes
+AplicacionWeb ..> MotorIA
+
+ServicioAutenticacion ..> ServicioSesiones
+ServicioAutenticacion ..> ServicioRoles
+
+ServicioVentas ..> ServicioProductos
+ServicioVentas ..> ServicioAuditoria
+ServicioReportes ..> ServicioVentas
+ServicioReportes ..> CacheOperativa
+ServicioRespaldos ..> CacheOperativa
+MotorIA ..> CacheOperativa
+AsistenteChat ..> MotorIA
+
+note bottom of AplicacionWeb
+Diagrama conceptual orientado a la arquitectura principal.
+Resume servicios y responsabilidades, no cada archivo del código.
+end note
+
+@enduml

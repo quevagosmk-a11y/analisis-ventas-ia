@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040">
+  <defs>
+    <style>
+      .bg { fill: #f7f9ff; }
+      .title { font: 700 28px 'Segoe UI', Arial, sans-serif; fill: #1f2a44; }
+      .pkg { fill: #eef3ff; stroke: #98acf5; stroke-width: 2.5; }
+      .pkg-title { font: 700 18px 'Segoe UI', Arial, sans-serif; fill: #28479b; }
+      .cls { fill: #ffffff; stroke: #54647d; stroke-width: 2; }
+      .cls-head { fill: #e8efff; stroke: #54647d; stroke-width: 2; }
+      .cls-title { font: 700 16px 'Segoe UI', Arial, sans-serif; fill: #1f2a44; }
+      .cls-text { font: 13px 'Segoe UI', Arial, sans-serif; fill: #45556f; }
+      .line { stroke: #52627f; stroke-width: 2.2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .note { fill: #fff6d6; stroke: #d3b559; stroke-width: 2; }
+      .note-text { font: 14px 'Segoe UI', Arial, sans-serif; fill: #7b5a08; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#52627f"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="1040"/>
+  <text class="title" x="800" y="58" text-anchor="middle">Diagrama de clases conceptual - La Séptima Estrella</text>
+
+  <!-- Aplicación -->
+  <g transform="translate(660 95)">
+    <rect class="cls" x="0" y="0" width="280" height="122" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="280" height="40" rx="14"/>
+    <path d="M0 40 H280" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="140" y="26" text-anchor="middle">AplicaciónWeb</text>
+    <text class="cls-text" x="18" y="66">+ inicializar()</text>
+    <text class="cls-text" x="18" y="88">+ registrar_rutas()</text>
+    <text class="cls-text" x="18" y="110">+ cargar_configuración()</text>
+  </g>
+
+  <!-- Paquetes -->
+  <rect class="pkg" x="70" y="290" width="420" height="470" rx="22"/>
+  <text class="pkg-title" x="100" y="325">Seguridad y acceso</text>
+
+  <rect class="pkg" x="540" y="290" width="520" height="540" rx="22"/>
+  <text class="pkg-title" x="570" y="325">Operación del negocio</text>
+
+  <rect class="pkg" x="1090" y="280" width="450" height="520" rx="22"/>
+  <text class="pkg-title" x="1140" y="325">Analítica y apoyo</text>
+
+  <!-- Seguridad -->
+  <g transform="translate(115 360)">
+    <rect class="cls" x="0" y="0" width="330" height="104" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="330" height="36" rx="14"/>
+    <path d="M0 36 H330" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="165" y="24" text-anchor="middle">ServicioAutenticación</text>
+    <text class="cls-text" x="16" y="58">+ iniciar_sesión()</text>
+    <text class="cls-text" x="16" y="80">+ cerrar_sesión()</text>
+    <text class="cls-text" x="16" y="102">+ validar_permiso()</text>
+  </g>
+
+  <g transform="translate(115 505)">
+    <rect class="cls" x="0" y="0" width="330" height="92" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="330" height="36" rx="14"/>
+    <path d="M0 36 H330" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="165" y="24" text-anchor="middle">ServicioSesiones</text>
+    <text class="cls-text" x="16" y="58">+ crear_token()</text>
+    <text class="cls-text" x="16" y="80">+ renovar_sesión()</text>
+  </g>
+
+  <g transform="translate(115 635)">
+    <rect class="cls" x="0" y="0" width="330" height="82" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="330" height="36" rx="14"/>
+    <path d="M0 36 H330" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="165" y="24" text-anchor="middle">ServicioRoles</text>
+    <text class="cls-text" x="16" y="58">+ obtener_permisos()</text>
+    <text class="cls-text" x="16" y="80">+ actualizar_rol()</text>
+  </g>
+
+  <!-- Operación -->
+  <g transform="translate(590 360)">
+    <rect class="cls" x="0" y="0" width="220" height="104" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="220" height="36" rx="14"/>
+    <path d="M0 36 H220" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="110" y="24" text-anchor="middle">ServicioVentas</text>
+    <text class="cls-text" x="16" y="58">+ registrar_venta()</text>
+    <text class="cls-text" x="16" y="80">+ consultar_detalle()</text>
+    <text class="cls-text" x="16" y="102">+ deshabilitar_venta()</text>
+  </g>
+
+  <g transform="translate(840 360)">
+    <rect class="cls" x="0" y="0" width="220" height="104" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="220" height="36" rx="14"/>
+    <path d="M0 36 H220" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="110" y="24" text-anchor="middle">ServicioProductos</text>
+    <text class="cls-text" x="16" y="58">+ consultar_stock()</text>
+    <text class="cls-text" x="16" y="80">+ actualizar_precio()</text>
+  </g>
+
+  <g transform="translate(590 520)">
+    <rect class="cls" x="0" y="0" width="220" height="92" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="220" height="36" rx="14"/>
+    <path d="M0 36 H220" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="110" y="24" text-anchor="middle">ServicioReportes</text>
+    <text class="cls-text" x="16" y="58">+ generar_reporte()</text>
+    <text class="cls-text" x="16" y="80">+ calcular_estadísticas()</text>
+  </g>
+
+  <g transform="translate(840 520)">
+    <rect class="cls" x="0" y="0" width="220" height="92" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="220" height="36" rx="14"/>
+    <path d="M0 36 H220" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="110" y="24" text-anchor="middle">ServicioAuditoría</text>
+    <text class="cls-text" x="16" y="58">+ registrar_evento()</text>
+    <text class="cls-text" x="16" y="80">+ consultar_eventos()</text>
+  </g>
+
+  <g transform="translate(690 675)">
+    <rect class="cls" x="0" y="0" width="220" height="92" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="220" height="36" rx="14"/>
+    <path d="M0 36 H220" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="110" y="24" text-anchor="middle">ServicioRespaldos</text>
+    <text class="cls-text" x="16" y="58">+ generar_respaldo()</text>
+    <text class="cls-text" x="16" y="80">+ restaurar_respaldo()</text>
+  </g>
+
+  <!-- Analítica -->
+  <g transform="translate(1155 355)">
+    <rect class="cls" x="0" y="0" width="320" height="92" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="320" height="36" rx="14"/>
+    <path d="M0 36 H320" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="160" y="24" text-anchor="middle">MotorIA</text>
+    <text class="cls-text" x="16" y="58">+ pronosticar_demanda()</text>
+    <text class="cls-text" x="16" y="80">+ generar_alertas()</text>
+  </g>
+
+  <g transform="translate(1155 515)">
+    <rect class="cls" x="0" y="0" width="320" height="92" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="320" height="36" rx="14"/>
+    <path d="M0 36 H320" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="160" y="24" text-anchor="middle">AsistenteChat</text>
+    <text class="cls-text" x="16" y="58">+ interpretar_consulta()</text>
+    <text class="cls-text" x="16" y="80">+ responder()</text>
+  </g>
+
+  <g transform="translate(1155 675)">
+    <rect class="cls" x="0" y="0" width="320" height="104" rx="14"/>
+    <rect class="cls-head" x="0" y="0" width="320" height="36" rx="14"/>
+    <path d="M0 36 H320" stroke="#54647d" stroke-width="2"/>
+    <text class="cls-title" x="160" y="24" text-anchor="middle">CacheOperativa</text>
+    <text class="cls-text" x="16" y="58">+ actualizar()</text>
+    <text class="cls-text" x="16" y="80">+ obtener_productos()</text>
+    <text class="cls-text" x="16" y="102">+ obtener_ventas()</text>
+  </g>
+
+  <!-- Relaciones principales sin cruzar texto -->
+  <path class="line" d="M 800 217 V 250 H 280 V 360" marker-end="url(#arrow)"/>
+  <path class="line" d="M 800 217 V 250 H 700 V 360" marker-end="url(#arrow)"/>
+  <path class="line" d="M 800 217 V 248 H 1315 V 355" marker-end="url(#arrow)"/>
+
+  <path class="line" d="M 280 464 V 505" marker-end="url(#arrow)"/>
+  <path class="line" d="M 280 597 V 635" marker-end="url(#arrow)"/>
+
+  <path class="line" d="M 810 412 H 840" marker-end="url(#arrow)"/>
+  <path class="line" d="M 700 464 V 492 H 950 V 520" marker-end="url(#arrow)"/>
+  <path class="line" d="M 700 520 V 464" marker-end="url(#arrow)"/>
+  <path class="line" d="M 810 566 H 1080 V 640 H 1275 V 675" marker-end="url(#arrow)"/>
+  <path class="line" d="M 910 721 H 1085 V 790 H 1375 V 779" marker-end="url(#arrow)"/>
+
+  <path class="line" d="M 1315 447 V 515" marker-end="url(#arrow)"/>
+  <path class="line" d="M 1315 607 V 675" marker-end="url(#arrow)"/>
+
+  <!-- Nota -->
+  <rect class="note" x="515" y="885" width="570" height="94" rx="16"/>
+  <text class="note-text" x="800" y="918" text-anchor="middle">Diagrama conceptual orientado a la arquitectura principal.</text>
+  <text class="note-text" x="800" y="942" text-anchor="middle">Resume servicios y responsabilidades sin intentar representar</text>
+  <text class="note-text" x="800" y="966" text-anchor="middle">cada archivo o cada función interna del código.</text>
+</svg>

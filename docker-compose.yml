@@ -1,0 +1,57 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: septima_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-changeme}
+      MYSQL_DATABASE: ${DB_NAME:-la_septima_estrella}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uroot -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: septima_app
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      DB_HOST: mysql
+      DB_PORT: "3306"
+      DB_USER: root
+      DB_PASSWORD: ${DB_PASSWORD:-changeme}
+      DB_NAME: ${DB_NAME:-la_septima_estrella}
+      APP_SECRET_KEY: ${APP_SECRET_KEY:-cambia-esta-clave}
+      PASSWORD_HASH_ITERATIONS: ${PASSWORD_HASH_ITERATIONS:-390000}
+      FLASK_DEBUG: "0"
+      PORT: "5000"
+      SESSION_COOKIE_SECURE: "0"
+      APP_AUTO_BACKUP: "1"
+      APP_BACKUP_DIR: /app/backups
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
+      OPENAI_API_BASE: ${OPENAI_API_BASE:-https://api.openai.com/v1}
+      OPENAI_TIMEOUT_SECONDS: ${OPENAI_TIMEOUT_SECONDS:-20}
+      OPENAI_MAX_OUTPUT_TOKENS: ${OPENAI_MAX_OUTPUT_TOKENS:-500}
+      AI_ENGINE: ${AI_ENGINE:-auto}
+      OLLAMA_API_BASE: ${OLLAMA_API_BASE:-}
+      OLLAMA_API_MODEL: ${OLLAMA_API_MODEL:-llama3.1:8b}
+      OLLAMA_TIMEOUT_SECONDS: ${OLLAMA_TIMEOUT_SECONDS:-45}
+    ports:
+      - "5000:5000"
+    volumes:
+      - app_backups:/app/backups
+
+volumes:
+  mysql_data:
+  app_backups:

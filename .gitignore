@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+.venv-linux/
+.venvtest/
+venv/
+
+# Local env files
+.env
+.env.local
+.env.*.local
+.env.docker
+.env.vps
+
+# Build / distributions
+build/
+dist/
+*.egg-info/
+
+# Runtime artifacts
+backups/*.json
+backups/*.pdf
+backups/latest.json
+logs/
+deploy/railway/*.sql
+
+# Large generated artifacts / local ML assets
+models/*.joblib
+models/*.pkl
+
+# Frontend
+node_modules/
+npm-debug.log*
+
+# Project evidence/artifacts (not required for runtime)
+scripts/*.zip
+scripts/*.har
+scripts/*.png
+scripts/*.pdf
+scripts/console_*.txt
+scripts/network_report.json
+scripts/report*.html
+scripts/report*.md
+scripts/trace_contents/
+scripts/evidence/
+scripts/real_shots/
+scripts/.tmp/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Root temporary files
+.tmp/

@@ -1,0 +1,72 @@
+@startuml
+left to right direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam usecase {
+  BackgroundColor #eef3ff
+  BorderColor #3157c4
+}
+
+actor "Usuario del sistema" as Usuario
+actor "Vendedor" as Vendedor
+actor "Gerente" as Gerente
+actor "Administrador" as Admin
+actor "Auditor" as Auditor
+
+rectangle "Sistema La Séptima Estrella" {
+  package "Acceso y navegación" {
+    usecase "Iniciar sesión" as UC_Login
+    usecase "Gestionar perfil" as UC_Profile
+    usecase "Consultar panel principal" as UC_Dashboard
+  }
+
+  package "Operación comercial" {
+    usecase "Registrar venta" as UC_RegisterSale
+    usecase "Consultar ventas recientes" as UC_RecentSales
+    usecase "Consultar productos" as UC_Products
+    usecase "Usar asistente IA" as UC_AI
+    usecase "Deshabilitar venta autorizada" as UC_DisableSale
+  }
+
+  package "Gestión y control" {
+    usecase "Gestionar productos" as UC_ManageProducts
+    usecase "Consultar reportes y estadísticas" as UC_Reports
+    usecase "Gestionar usuarios y roles" as UC_Users
+    usecase "Gestionar respaldos" as UC_Backups
+    usecase "Autorizar deshabilitación de venta" as UC_Authorize
+    usecase "Consultar auditoría" as UC_Audit
+  }
+}
+
+Usuario --> UC_Login
+Usuario --> UC_Profile
+Usuario --> UC_Dashboard
+
+Vendedor --> UC_RegisterSale
+Vendedor --> UC_RecentSales
+Vendedor --> UC_Products
+Vendedor --> UC_AI
+Vendedor --> UC_DisableSale
+
+Gerente --> UC_ManageProducts
+Gerente --> UC_Reports
+Gerente --> UC_Users
+Gerente --> UC_Backups
+Gerente --> UC_Authorize
+
+Admin --> UC_Audit
+
+Auditor --> UC_Audit
+
+note right of UC_DisableSale
+Solo puede ejecutarse si la venta
+fue autorizada previamente por
+gerente o administrador.
+end note
+
+note bottom of UC_Reports
+El vendedor no accede al módulo
+de reportes ni estadísticas.
+end note
+
+@enduml
