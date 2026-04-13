@@ -11,10 +11,9 @@ RUN pip install --no-cache-dir -r /app/requirements.txt
 
 COPY src /app/src
 COPY data /app/data
-COPY models /app/models
 COPY docker/entrypoint.sh /entrypoint.sh
 
-RUN chmod +x /entrypoint.sh && mkdir -p /app/backups
+RUN chmod +x /entrypoint.sh && mkdir -p /app/backups /app/models
 
 EXPOSE 5000
 
