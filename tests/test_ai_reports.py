@@ -222,6 +222,34 @@ def test_generate_ai_report_heuristic_uses_calendar_window(monkeypatch):
     assert predicted == pytest.approx(9.33, abs=0.01)
 
 
+def test_generate_ai_report_heuristic_backfills_products_outside_recent_window(monkeypatch):
+    monkeypatch.setattr(ai_engine, 'get_demand_model_bundle', lambda: None)
+    sales_df = pd.DataFrame(
+        {
+            'product': ['Cafe', 'Cafe', 'Arroz'],
+            'qty': [10, 10, 12],
+            'price': [3000.0, 3000.0, 4500.0],
+            'total': [30000.0, 30000.0, 54000.0],
+            'date': pd.to_datetime(['2025-01-28', '2025-01-29', '2024-12-01']),
+            'timestamp': pd.to_datetime(['2025-01-28', '2025-01-29', '2024-12-01']),
+        }
+    )
+
+    report = ai_engine.generate_ai_report(
+        sales_df,
+        [
+            {'nombre': 'Cafe', 'stock': 3, 'min_stock': 2, 'categoria': 'Bebidas'},
+            {'nombre': 'Arroz', 'stock': 2, 'min_stock': 4, 'categoria': 'Despensa'},
+        ],
+        today=datetime(2025, 1, 30),
+        config=ai_engine.AIEngineConfig(window_days=30, horizon_days=14),
+    )
+
+    assert report['metadata']['modelo_demanda']['estrategia'] == 'heuristica_promedio'
+    assert report['predicciones_demanda']['Cafe']['predicted_demand'] == pytest.approx(9.33, abs=0.01)
+    assert report['predicciones_demanda']['Arroz']['predicted_demand'] > 0
+
+
 def test_build_demand_forecast_rows_uses_current_date_for_runout(monkeypatch):
     monkeypatch.setattr(
         app_module,

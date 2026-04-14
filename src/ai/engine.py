@@ -301,9 +301,20 @@ def generate_ai_report(
             max_date = pd.to_datetime(scope["date"], errors="coerce").max()
             if pd.notna(min_date) and pd.notna(max_date):
                 observation_days = max(1, int((max_date - min_date).days) + 1)
-        grouped = scope.groupby("product")["qty"].sum()
-        for product, qty_sum in grouped.items():
-            avg_daily = float(qty_sum) / max(observation_days, 1)
+
+        grouped_recent = scope.groupby("product")["qty"].sum()
+        grouped_history = norm_sales.groupby("product")["qty"].sum()
+        history_min_date = pd.to_datetime(norm_sales["date"], errors="coerce").min()
+        history_max_date = pd.to_datetime(norm_sales["date"], errors="coerce").max()
+        history_days = max(cfg.window_days, 1)
+        if pd.notna(history_min_date) and pd.notna(history_max_date):
+            history_days = max(1, int((history_max_date - history_min_date).days) + 1)
+
+        for product in grouped_history.index:
+            if product in grouped_recent.index:
+                avg_daily = float(grouped_recent[product]) / max(observation_days, 1)
+            else:
+                avg_daily = float(grouped_history[product]) / max(history_days, 1)
             predicted_total = max(avg_daily * horizon, 0.0)
             demand_predictions[str(product)] = {
                 "predicted_demand": float(round(predicted_total, 2)),
